@@ -1,0 +1,21 @@
+{
+  "name": "Urban-Shop",
+  "version": "0.0.0",
+  "homepage": "https://github.com/kamendd1/Urban-Shop",
+  "authors": [
+    "kamendd1 <kamen_damianov@abv.bg>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [
+    "es6"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
