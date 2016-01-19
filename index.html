@@ -4,48 +4,44 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <title>Webly Theme | Just another WordPress site</title>
     <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
     <link rel="stylesheet" href="bower_components/bootstrap/css/bootstrap.css" />
     <link rel="stylesheet" href="styles.css" type="text/css" media="screen" />
-<link href='http://fonts.googleapis.com/css?family=Droid+Sans:regular,bold' rel='stylesheet' type='text/css' />
-<link href='http://fonts.googleapis.com/css?family=Goudy+Bookletter+1911' rel='stylesheet' type='text/css' />
+    <link href='http://fonts.googleapis.com/css?family=Droid+Sans:regular,bold' rel='stylesheet' type='text/css' />
+    <link href='http://fonts.googleapis.com/css?family=Goudy+Bookletter+1911' rel='stylesheet' type='text/css' />
 </head>
 
 <body class="home blog chrome et_includes_sidebar">
 
     <div id="top-bottom" class="home">
         <div class="container">
-            <div class="row">
             <div id="header" class="clearfix col-xs-12">
-            <div class="row">
-                <div class="col-xs-4">
+                <div class="logoo">
                 <a href="#">
                     <img src="http://cdn.elegantthemes.com/preview/Webly/wp-content/themes/Webly/images/logo.png" alt="Webly Theme" id="logo"/>
                 </a>
 
                 <p id="slogan">Just another WordPress site</p>
                 </div>
-                <div class="col-xs-8">
-                <div id="menu">
-                    <div id="menu-right">
-                        <div id="menu-content" class="">
-                            <ul id="top-menu" class="row">
-                                <li id="menu-item-595" class="col-xs-1"><a href="#">Home</a></li>
-                                <li id="menu-item-603" class="col-xs-1"><a href="#">Themes</a></li>
-                                <li id="menu-item-590" class="col-xs-1"><a href="#">Features</a></li>
-                                <li id="menu-item-586" class="col-xs-1"><a href="#">About</a></li>
-                                <li id="menu-item-587" class="col-xs-1"><a href="#">Blog</a></li>
-                                <li id="menu-item-594" class="col-xs-1"><a href="#">Support</a></li>
-                                <li id="menu-item-619" class="col-xs-1"><a href="#">Affiliates</a></li>
-                                <li id="menu-item-622" class="col-xs-1"><a href="#">Login</a></li>
-                                <li id="menu-item-629" class="col-xs-2"><a href="#">Join Today</a></li>
-                                <li id="menu-item-639" class="col-xs-1"><a href="#">FAQ</a></li>
+                <div class="menuu">
+                        <div id="menu-content">
+                            <ul id="top-menu">
+                                <li id="menu-item-595"><a href="#">Home</a></li>
+                                <li id="menu-item-603"><a href="#">Themes</a></li>
+                                <li id="menu-item-590"><a href="#">Features</a></li>
+                                <li id="menu-item-586"><a href="#">About</a></li>
+                                <li id="menu-item-587"><a href="#">Blog</a></li>
+                                <li id="menu-item-594"><a href="#">Support</a></li>
+                                <li id="menu-item-619"><a href="#">Affiliates</a></li>
+                                <li id="menu-item-622"><a href="#">Login</a></li>
+                                <li id="menu-item-629"><a href="#">Join Today</a></li>
+                                <li id="menu-item-639"><a href="#">FAQ</a></li>
                             </ul>
                         </div> <!-- end #menu-content -->
-                    </div> <!-- end #menu-right -->
-                </div> <!-- end #menu -->
                 </div>
-            </div>
-                <div class="clear"></div>
+
+                <div class="clear">
+                </div>
 
                 <!-- Start Featured -->
                 <div id="featured">
@@ -55,7 +51,7 @@
 
 
                             <div class="description">
-                                <h2 class="title"><a href="#">Building Websites Has Never Been Easier</a></h2>
+                                <h2 class="heading title"><a href="#">Building Websites Has Never Been Easier</a></h2>
 
                                 <p>“Join today and gift your business with a beautiful online presence”</p>
                             </div> <!-- end .description -->
@@ -64,18 +60,18 @@
                         </div> <!-- end .slide -->
                     </div> <!-- end #featured_content -->
 
-                    <a id="left-arrow" href="#">Previous</a>
-                    <a id="right-arrow" href="#">Next</a>
+                    <a id="left-arrow" class='f-arrow' href="#">Previous</a>
+                    <a id="right-arrow" class='f-arrow' href="#">Next</a>
 
                 </div>	<!-- end #featured -->
-            </div> <!-- end #header --></div>
+            </div> <!-- end #header --><!--</div>-->
 
             <div id="top-buttons" class="clearfix">
                 <a href="#" class="button">
                     <span>View The Demo</span>
                 </a>
                 <a href="#" class="button">
-                    <span>Sign Up Today</span>
+                    <span>Sign Up Today!</span>
                 </a>
             </div> <!-- end #top-buttons -->
 
@@ -88,7 +84,7 @@
     <div class="container">
         <div id="blurbs" class="clearfix">
             <div class="service">
-                <h3 class="title">The Best Design</h3>
+                <h3 class="heading title">What We Offer</h3>
                 <div class="thumb">
                     <a href="#">
                         <img src="http://cdn.elegantthemes.com/preview/Webly/wp-content/uploads/2010/12/t2.jpg" class='item-image'  alt='The Best Design' width='56' height='56' />												<span class="overlay"></span>
@@ -98,17 +94,17 @@
                 <a href="#" class="readmore"><span>Read More</span></a>
             </div> <!-- end .service -->
             <div class="service">
-                <h3 class="title">Advanced Features</h3>
+                <h3 class="heading title">Who We Are</h3>
                 <div class="thumb">
                     <a href="#">
                         <img src="http://cdn.elegantthemes.com/preview/Webly/wp-content/uploads/2010/12/t4.jpg" class='item-image'  alt='Advanced Features' width='56' height='56' />												<span class="overlay"></span>
                     </a>
                 </div> 	<!-- end .thumb -->
                 <p>Suspendisse consequat metus quis sem mattis lobortis. Ut eu tellus ullamcorper orci convallis elem entum non sed nibh. Phasellus a rhoncus nisi. Fusce posuere condi mentum posuere. Quisque velit nisi, convallis et luctus in, consectetur at est. Vivamus felis enim. Nam varius pulvinar dolor, at lobortis.</p>
-                <a href="#" class="readmore"><span>Read More</span></a>
+                <a href="#" class="readmore">Read More</a>
             </div> <!-- end .service -->
             <div class="service last">
-                <h3 class="title">Web Design Services</h3>
+                <h3 class="heading title">Our Missions</h3>
                 <div class="thumb">
                     <a href="#">
                         <img src="http://cdn.elegantthemes.com/preview/Webly/wp-content/uploads/2010/12/t3.jpg" class='item-image'  alt='Web Design Services' width='56' height='56' />
@@ -116,7 +112,7 @@
                     </a>
                 </div> 	<!-- end .thumb -->
                 <p>Nulla ornare, nulla et egestas hendrerit, ipsum dui vulputate dolor, et ornare orci erat eleifend pede. Fusce eros libero, vestibulum non, elementum eu, suscipit eget, leo. Donec consectetuer tincidunt diam. Sed et mauris in ligula feugiat hendrerit. Cras neque purus, mollis non, adipiscing ac pretium.</p>
-                <a href="#" class="readmore"><span>Read More</span></a>
+                <a href="#" class="readmore">Read More</a>
             </div> <!-- end .service -->
         </div> <!-- #blurbs -->
 
@@ -164,9 +160,10 @@
 <div id="call-to-action-top">
 <div id="call-to-action">
     <div class="container clearfix">
+        <a href="#" class="readmore"><span>Read More</span></a>
         <p>We offer the highest quality and most advanced web design services anywhere
-            <a href="#" class="readmore"><span>Read More</span></a>
         </p>
+
         <span id="down-arrow"></span>
     </div> <!-- end .container -->
 </div> <!-- end #call-to-action -->
@@ -187,15 +184,33 @@
                         <span class="overlay"></span>
                     </div>
                     <p>Cras rhoncus ipsum ac dolor. In hac habitasse platea dictumst. Nulla dapibus ultricies pede. Quisque augue risus, porttitor nec, suscipit ut, pellentesque quis, lacus. Duis adipiscing purus eu metus pharetra porttitor. Aenean sapien nisi, sodales non, facilisis nec ultricies et, erat  purus eu metus. </p>
-                    <a class="readmore" href="http://elegantthemes.com/preview/Webly/?page_id=127"><span>Learn More</span></a>
 
                 </div> <!-- end .footer-widget -->
-                <div id="text-2" class="footer-widget widget_text col-xs-4">
-                <h4 class="widgettitle">Custom Text Widget</h4>
-                <div class="textwidget"> Nunc varius ultrices venenatis. Pellentesque vulputate blandit dolor vel pellentesque. Mauris porttitor elit sed diam feugiat ut adipiscing ante auctor. Cras est enim, aliquam id tempus sit amet, accumsan in sem. Duis mi mauris, porta ut adipiscing id, elementum nec urna. Maecenas nec velit ante. In facilisis tempor aliquet. Duis enim ligula, lobortis a laoreet non, lobortis id eros.</div>
-            </div> <!-- end .footer-widget -->
+                <div id="recent-posts-2" class="footer-widget widget_recent_entries col-xs-4">
+                    <h4 class="heading widgettitle">Recent Posts</h4>
+                    <ul>
+                        <li>
+                            <a href="#">Praesent dui lectus dignissim id dignissim</a>
+                        </li>
+                        <li>
+                            <a href="#">Fusce at nunc ac nunc malesuada</a>
+                        </li>
+                        <li>
+                            <a href="#">Class aptent taciti sociosqu ad litora</a>
+                        </li>
+                        <li>
+                            <a href="#">Donec rhoncus lacinia pulvinar</a>
+                        </li>
+                        <li>
+                            <a href="#">Quisque elementum libero sit amet lacus</a>
+                        </li>
+                        <li>
+                            <a href="#">In molestie neque id elit auctor</a>
+                        </li>
+                    </ul>
+                </div>
                 <div id="recent-posts-3" class="footer-widget widget_recent_entries col-xs-4">
-                <h4 class="widgettitle">From The Blog</h4>
+                <h4 class="heading widgettitle">Archives</h4>
                 <ul>
                 <li>
                     <a href="#">Praesent dui lectus dignissim id dignissim</a>

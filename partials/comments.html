@@ -11,7 +11,9 @@
 
 </head>
 <body>
-<div id="top-bottom">
+<div id="top">
+    <div id="top-center">
+        <div id="top-bottom">
     <div class="container-inner">
         <div class="row">
             <div id="header" class="clearfix col-xs-12">
@@ -27,17 +29,17 @@
                         <div id="menu">
                             <div id="menu-right">
                                 <div id="menu-content" class="">
-                                    <ul id="top-menu" class="row">
-                                        <li id="menu-item-595" class="col-xs-1"><a href="#">Home</a></li>
-                                        <li id="menu-item-603" class="col-xs-1"><a href="#">Themes</a></li>
-                                        <li id="menu-item-590" class="col-xs-1"><a href="#">Features</a></li>
-                                        <li id="menu-item-586" class="col-xs-1"><a href="#">About</a></li>
-                                        <li id="menu-item-587" class="col-xs-1"><a href="#">Blog</a></li>
-                                        <li id="menu-item-594" class="col-xs-1"><a href="#">Support</a></li>
-                                        <li id="menu-item-619" class="col-xs-1"><a href="#">Affiliates</a></li>
-                                        <li id="menu-item-622" class="col-xs-1"><a href="#">Login</a></li>
-                                        <li id="menu-item-629" class="col-xs-2"><a href="#">Join Today</a></li>
-                                        <li id="menu-item-639" class="col-xs-1"><a href="#">FAQ</a></li>
+                                    <ul id="top-menu">
+                                        <li id="menu-item-595"><a href="#">Home</a></li>
+                                        <li id="menu-item-603"><a href="#">Themes</a></li>
+                                        <li id="menu-item-590"><a href="#">Features</a></li>
+                                        <li id="menu-item-586"><a href="#">About</a></li>
+                                        <li id="menu-item-587"><a href="#">Blog</a></li>
+                                        <li id="menu-item-594"><a href="#">Support</a></li>
+                                        <li id="menu-item-619"><a href="#">Affiliates</a></li>
+                                        <li id="menu-item-622"><a href="#">Login</a></li>
+                                        <li id="menu-item-629"><a href="#">Join Today</a></li>
+                                        <li id="menu-item-639"><a href="#">FAQ</a></li>
                                     </ul>
                                 </div> <!-- end #menu-content -->
                             </div> <!-- end #menu-right -->
@@ -46,7 +48,7 @@
                 </div>
                 <div class="clear"></div>
                 <div id="category-name">
-                    <h1 class="category-title">Post Title Goes Here</h1>
+                    <h1 class="heading category-title">Post Title Goes Here</h1>
 
                     <p class="description">
                         Posted  by <a href="#" title="Posts by admin" rel="author">admin</a> on Sep 4, 2008 in <a href="#" rel="category tag">Blog</a> | <a href="#">9 comments</a>			</p>
@@ -54,7 +56,10 @@
             </div> <!-- end .container -->
         </div> <!-- end #top-bottom -->
     </div> <!-- end #top-center -->
-</div> <!-- end #top -->
+</div> <!-- end #top-bottom -->
+</div> <!-- end #top-center -->
+</div>
+
 <div id="main-area">
     <div id="main-top-shadow">
         <div class="container">
@@ -86,7 +91,7 @@
                     <div id="comment-wrap">
 
 
-                        <h3 id="comments">9 Comments</h3>
+                        <h3 id="comments" class="heading">9 Comments</h3>
 
 
                         <ol class="commentlist clearfix">
@@ -192,7 +197,7 @@
 
 
                         <div id="respond" class="comment-respond">
-                            <h3 id="reply-title" class="comment-reply-title">
+                            <h3 id="reply-title" class="heading comment-reply-title">
                                 <span>Leave a Reply</span>
                                 <small><a rel="nofollow" id="cancel-comment-reply-link" href="#" style="display:none;">Cancel reply</a></small></h3>
                             <form action="#" method="post" id="commentform" class="comment-form">
@@ -222,7 +227,9 @@
                 </div> 	<!-- end #left-area -->
 
                 <div id="sidebar">
-                    <div id="recent-posts-4" class="widget widget_recent_entries">		<h4 class="widgettitle">Recent Posts</h4>		<ul>
+                    <div id="recent-posts-4" class="widget widget_recent_entries">
+                        <h4 class="heading widgettitle">Recent Posts</h4>
+                        <ul>
                         <li>
                             <a href="#">Praesent dui lectus dignissim id dignissim</a>
                         </li>
@@ -241,7 +248,7 @@
                     </ul>
                     </div> <!-- end .widget -->
                     <div id="archives-3" class="widget widget_archive">
-                        <h4 class="widgettitle">Archives</h4>
+                        <h4 class="heading widgettitle">Archives</h4>
                         <ul>
                     <li><a href='#'>August 2010</a></li>
                     <li><a href='#'>September 2008</a></li>
@@ -252,7 +259,7 @@
                 </ul>
                 </div> <!-- end .widget -->
                     <div id="recent-comments-3" class="widget widget_recent_comments">
-                        <h4 class="widgettitle">Recent Comments</h4>
+                        <h4 class="heading widgettitle">Recent Comments</h4>
                         <ul id="recentcomments">
                             <li class="recentcomments"><span class="comment-author-link"><a href='#' rel='external nofollow' class='url'>Frankie</a></span> on <a href="#">At vero eos et accusamus et iusto</a></li>
                             <li class="recentcomments"><span class="comment-author-link"><a href='#' rel='external nofollow' class='url'>Soviet</a></span> on <a href="#">Urna eget erat non purus</a></li>
@@ -274,53 +281,73 @@
     </div> <!-- end #main-top-shadow -->
 </div> <!-- end #main-area -->
 
-<div id="footer">
-    <div id="footer-content">
-        <div id="footer-top">
-            <div class="container">
-                <div id="footer-widgets" class="clearfix">
-                    <div id="customlogowidget-2" class="footer-widget col-xs-4"><p id="footer-logo">
-                        <img alt="" src="http://cdn.elegantthemes.com/preview/Webly/wp-content/uploads/2010/08/logo2.png" /><span>© 20010 Modest Inc</span></p>
-                        <div class="thumb">
-                            <img class="item-image" alt="" src="http://cdn.elegantthemes.com/preview/Webly/wp-content/uploads/et_temp/thumb-5-86730_56x56.png" />
-                            <span class="overlay"></span>
-                        </div>
-                        <p>Cras rhoncus ipsum ac dolor. In hac habitasse platea dictumst. Nulla dapibus ultricies pede. Quisque augue risus, porttitor nec, suscipit ut, pellentesque quis, lacus. Duis adipiscing purus eu metus pharetra porttitor. Aenean sapien nisi, sodales non, facilisis nec ultricies et, erat  purus eu metus. </p>
-                        <a class="readmore" href=#"><span>Learn More</span></a>
+<div id="footer-top" class="home-bottom">
+    <div class="container">
+        <div class="row">
+            <div id="footer-widgets" class="clearfix">
+                <div id="customlogowidget-2" class="footer-widget col-xs-4">
+                    <p id="footer-logo">
+                        <img alt="" src="http://cdn.elegantthemes.com/preview/Webly/wp-content/uploads/2010/08/logo2.png" />
+                        <span>© 20010 Modest Inc</span>
+                    </p>
+                    <div class="thumb">
+                        <img class="item-image" alt="" src="http://cdn.elegantthemes.com/preview/Webly/wp-content/uploads/et_temp/thumb-5-86730_56x56.png" />
+                        <span class="overlay"></span>
+                    </div>
+                    <p>Cras rhoncus ipsum ac dolor. In hac habitasse platea dictumst. Nulla dapibus ultricies pede. Quisque augue risus, porttitor nec, suscipit ut, pellentesque quis, lacus. Duis adipiscing purus eu metus pharetra porttitor. Aenean sapien nisi, sodales non, facilisis nec ultricies et, erat  purus eu metus. </p>
 
-                    </div> <!-- end .footer-widget -->
-                    <div id="text-2" class="footer-widget col-xs-4">
-                        <h4 class="widgettitle">Custom Text Widget</h4>
-                        <div class="textwidget"> Nunc varius ultrices venenatis. Pellentesque vulputate blandit dolor vel pellentesque. Mauris porttitor elit sed diam feugiat ut adipiscing ante auctor. Cras est enim, aliquam id tempus sit amet, accumsan in sem. Duis mi mauris, porta ut adipiscing id, elementum nec urna. Maecenas nec velit ante. In facilisis tempor aliquet. Duis enim ligula, lobortis a laoreet non, lobortis id eros.</div>
                 </div> <!-- end .footer-widget -->
-                    <div id="recent-posts-3" class="footer-widget col-xs-4">
-                        <h4 class="widgettitle">From The Blog</h4>
-                        <ul>
-                    <li>
-                        <a href="#">Praesent dui lectus dignissim id dignissim</a>
-                    </li>
-                    <li>
-                        <a href="#">Fusce at nunc ac nunc malesuada</a>
-                    </li>
-                    <li>
-                        <a href="#">Class aptent taciti sociosqu ad litora</a>
-                    </li>
-                    <li>
-                        <a href="#">Donec rhoncus lacinia pulvinar</a>
-                    </li>
-                    <li>
-                        <a href="#">Quisque elementum libero sit amet lacus</a>
-                    </li>
-                    <li>
-                        <a href="#">In molestie neque id elit auctor</a>
-                    </li>
-                </ul>
+                <div id="recent-posts-2" class="footer-widget widget_recent_entries col-xs-4">
+                    <h4 class="heading widgettitle">Recent Posts</h4>
+                    <ul>
+                        <li>
+                            <a href="#">Praesent dui lectus dignissim id dignissim</a>
+                        </li>
+                        <li>
+                            <a href="#">Fusce at nunc ac nunc malesuada</a>
+                        </li>
+                        <li>
+                            <a href="#">Class aptent taciti sociosqu ad litora</a>
+                        </li>
+                        <li>
+                            <a href="#">Donec rhoncus lacinia pulvinar</a>
+                        </li>
+                        <li>
+                            <a href="#">Quisque elementum libero sit amet lacus</a>
+                        </li>
+                        <li>
+                            <a href="#">In molestie neque id elit auctor</a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="recent-posts-3" class="footer-widget widget_recent_entries col-xs-4">
+                    <h4 class="heading widgettitle">Archives</h4>
+                    <ul>
+                        <li>
+                            <a href="#">Praesent dui lectus dignissim id dignissim</a>
+                        </li>
+                        <li>
+                            <a href="#">Fusce at nunc ac nunc malesuada</a>
+                        </li>
+                        <li>
+                            <a href="#">Class aptent taciti sociosqu ad litora</a>
+                        </li>
+                        <li>
+                            <a href="#">Donec rhoncus lacinia pulvinar</a>
+                        </li>
+                        <li>
+                            <a href="#">Quisque elementum libero sit amet lacus</a>
+                        </li>
+                        <li>
+                            <a href="#">In molestie neque id elit auctor</a>
+                        </li>
+                    </ul>
                 </div> <!-- end .footer-widget -->
-                </div> <!-- end #footer-widgets -->
-            </div> <!-- end .container -->
-        </div> <!-- end #footer-top -->
-    </div> <!-- end #footer-content -->
-</div> <!-- end #footer -->
+            </div> <!-- end #footer-widgets -->
+        </div>
+    </div> <!-- end .container -->
+</div> <!-- end #footer-top -->
+
 
 <div id="footer-bottom" class="home-footer">
     <div class="container clearfix row">
@@ -336,5 +363,6 @@
         <p id="copyright" class="col-xs-5">Designed by  <a href="#" title="Premium WordPress Themes">Elegant WordPress Themes</a> | Powered by  <a href="#">WordPress</a></p>
     </div> <!-- end .container -->
 </div> <!-- end #footer-bottom -->
+
 </body>
 </html>
