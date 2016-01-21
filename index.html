@@ -2,6 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <title>Webly Theme | Just another WordPress site</title>
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/angular/angular.js"></script>
@@ -15,15 +16,17 @@
 
     <div id="top-bottom" class="home">
         <div class="container">
+            <div class="row">
             <div id="header" class="clearfix col-xs-12">
-                <div class="logoo">
+            <div class="row">
+                <div class="col-xs-4 logoo">
                 <a href="#">
                     <img src="http://cdn.elegantthemes.com/preview/Webly/wp-content/themes/Webly/images/logo.png" alt="Webly Theme" id="logo"/>
                 </a>
 
                 <p id="slogan">Just another WordPress site</p>
                 </div>
-                <div class="menuu">
+                <div class="col-xs-8 menuu">
                         <div id="menu-content">
                             <ul id="top-menu">
                                 <li id="menu-item-595"><a href="#">Home</a></li>
@@ -39,9 +42,8 @@
                             </ul>
                         </div> <!-- end #menu-content -->
                 </div>
-
-                <div class="clear">
-                </div>
+            </div>
+                <div class="clear"></div>
 
                 <!-- Start Featured -->
                 <div id="featured">
@@ -64,7 +66,7 @@
                     <a id="right-arrow" class='f-arrow' href="#">Next</a>
 
                 </div>	<!-- end #featured -->
-            </div> <!-- end #header --><!--</div>-->
+            </div> <!-- end #header --></div>
 
             <div id="top-buttons" class="clearfix">
                 <a href="#" class="button">
@@ -163,7 +165,6 @@
         <a href="#" class="readmore"><span>Read More</span></a>
         <p>We offer the highest quality and most advanced web design services anywhere
         </p>
-
         <span id="down-arrow"></span>
     </div> <!-- end .container -->
 </div> <!-- end #call-to-action -->
@@ -174,7 +175,7 @@
             <div class="container">
                 <div class="row">
             <div id="footer-widgets" class="clearfix">
-                <div id="customlogowidget-2" class="footer-widget col-xs-4">
+                <div id="customlogowidget-2" class="footer-widget col-md-4 col-xs-12">
                     <p id="footer-logo">
                     <img alt="" src="http://cdn.elegantthemes.com/preview/Webly/wp-content/uploads/2010/08/logo2.png" />
                     <span>© 20010 Modest Inc</span>
@@ -186,7 +187,7 @@
                     <p>Cras rhoncus ipsum ac dolor. In hac habitasse platea dictumst. Nulla dapibus ultricies pede. Quisque augue risus, porttitor nec, suscipit ut, pellentesque quis, lacus. Duis adipiscing purus eu metus pharetra porttitor. Aenean sapien nisi, sodales non, facilisis nec ultricies et, erat  purus eu metus. </p>
 
                 </div> <!-- end .footer-widget -->
-                <div id="recent-posts-2" class="footer-widget widget_recent_entries col-xs-4">
+                <div id="recent-posts-2" class="footer-widget widget_recent_entries col-md-4 col-xs-12">
                     <h4 class="heading widgettitle">Recent Posts</h4>
                     <ul>
                         <li>
@@ -209,7 +210,7 @@
                         </li>
                     </ul>
                 </div>
-                <div id="recent-posts-3" class="footer-widget widget_recent_entries col-xs-4">
+                <div id="recent-posts-3" class="footer-widget widget_recent_entries col-md-4 col-xs-12">
                 <h4 class="heading widgettitle">Archives</h4>
                 <ul>
                 <li>
@@ -240,16 +241,15 @@
 
 <div id="footer-bottom" class="home-footer">
 <div class="container clearfix row">
-    <ul id="menu-pages" class="bottom-nav col-xs-7">
-        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-595"><a href="#">Home</a></li>
-        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-603"><a href="#">Portfolio</a></li>
-        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-590"><a href="#">Page Templates</a></li>
-        <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-586"><a href="#">Blog</a></li>
-        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-587"><a href="#">Shortcodes</a></li>
-        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-594"><a href="#">About Us</a></li>
-        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-619"><a href="#">Contact</a></li>
+    <ul id="menu-pages" class="bottom-nav col-md-7 col-xs-6">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Testimonials</a></li>
     </ul>
-    <p id="copyright" class="col-xs-5">Designed by  <a href="#" title="Premium WordPress Themes">Elegant WordPress Themes</a> | Powered by  <a href="#">WordPress</a></p>
+    <p id="copyright" class="col-md-5 col-xs-6">Designed by  <a href="#">Elegant WordPress Themes</a> | Powered by  <a href="#">WordPress</a></p>
 </div> <!-- end .container -->
 </div> <!-- end #footer-bottom -->
 

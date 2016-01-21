@@ -89,24 +89,6 @@ br.clear {
     color: #808080;
 }
 
-h1 {
-    font-size: 2.5em;
-}
-h2 {
-    font-size: 2em;
-}
-h3 {
-    font-size: 1.83em;
-}
-h4 {
-    font-size: 1.5em;
-}
-h5 {
-    font-size: 1.33em;
-}
-h6 {
-    font-size: 1.16em;
-}
 p {
     padding-bottom: 10px; /*line-height: 24px;*/
 }
@@ -226,16 +208,6 @@ img#about-image {
     height: 550px;
 }
 
-.index #top-bottom .container {
-    height: auto;
-}
-
-.index #top-bottom, .index .container {
-    /*
-    background: none !important;
-    */
-}
-
 #top {
     background: url(images/top-bg.png) repeat-x;
 }
@@ -353,7 +325,7 @@ p#slogan {
     margin-right: 0;
 }
 
-.service h3.title  {
+.service .title  {
     font-size: 24px;
     color: #758b8d;
     text-shadow: 1px 1px 1px #ffffff;
@@ -456,7 +428,7 @@ a.et-video span.zoom-icon {
     text-align: center;
     padding-bottom: 26px;
     padding-top: 25px;
-    width: 90%;
+    width: 80%;
 }
 
 #call-to-action a {
@@ -504,7 +476,7 @@ span#down-arrow {
     padding-top: 60px;
 }
 
-h1.category-title {
+.category-title {
     font-size: 48px;
     color: #ffffff;
     text-shadow: 1px 1px 1px rgba(0,0,0,0.7);
@@ -574,13 +546,13 @@ span.post-overlay {
     width:212px;
 }
 
-h2.title {
+.title {
     font-size: 30px;
     text-shadow: 1px 1px 1px #ffffff;
     padding-bottom: 10px;
 }
 
-h2.title a {
+.title a {
     color: #758b8d;
     text-decoration: none;
 }
@@ -681,7 +653,6 @@ ul#top-menu li {
     margin-left: 12px;
     padding-top: 15px;
     float: left;
-
 }
 ul#top-menu a {
     font-size:12px;
@@ -762,14 +733,14 @@ ul#top-menu li:hover ul ul, ul#top-menu li.sfHover ul ul {
     padding-top: 54px;
 }
 
-.slide h2.title {
+.slide .title {
     font-size: 48px;
     text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
     font-style: normal;
     padding-bottom: 8px;
 }
 
-.slide h2.title a {
+.slide .title a {
     color: #fff;
 }
 
@@ -849,7 +820,7 @@ ul#top-menu li:hover ul ul, ul#top-menu li.sfHover ul ul {
     padding: 0 0 30px 35px;
 }
 
-.widget h4.widgettitle {
+.widget .widgettitle {
     font-size: 24px;
     color: #758b8d;
     text-shadow: 1px 1px 1px #ffffff;
@@ -882,7 +853,7 @@ ul#top-menu li:hover ul ul, ul#top-menu li.sfHover ul ul {
     padding: 42px 38px 0 0;
 }
 
-h3#comments, #reply-title span {
+#comments, #reply-title span {
     font-size: 36px;
     color: #758B8D;
     padding-bottom: 35px;
@@ -990,7 +961,8 @@ li.comment #respond input[type=text] {
     width: 48% !important;
 }
 
-#respond h3#comments {
+/*CLASS*/
+#respond #comments {
     padding-bottom: 15px;
 }
 
@@ -1025,7 +997,7 @@ li.comment #respond input[type=text] {
     margin-right: 0;
 }
 
-h4.widgettitle {
+.widgettitle {
     font-size: 24px;
     color: #ffffff;
     padding-bottom: 24px;
@@ -1182,7 +1154,7 @@ p#copyright a {
 }
 
 
-a.readmore:hover, #sidebar div.custom-sidebar-block ul.control li a:hover, ul#cats-menu li a:hover, ul#page-menu li a:hover, div#slider-control div.featitem h2 a  {
+a.readmore:hover, #sidebar div.custom-sidebar-block ul.control li a:hover, ul#cats-menu li a:hover, ul#page-menu li a:hover, div#slider-control div.featitem a  {
     text-decoration: none;
 }
 .foursixeight {
@@ -1251,4 +1223,94 @@ h3#reply-title small a {
 
 .js #featured .slide {
     display: none;
+}
+
+@media only screen and (min-width: 780px) and (max-width: 960px){
+    .menuu{
+        width: 100%;
+    }
+
+}
+
+@media only screen and (max-width: 480px){
+    .logoo{
+        width: 110%;
+        padding: 0;
+    }
+
+    .menuu{
+        display: none;
+    }
+
+    .container {
+        width: 100%;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    .heading a {
+        font-size: 25px;
+        line-height: 0;
+    }
+
+    .description p {
+        font-size: 13px;
+        width: 20%;
+    }
+
+    #top-buttons span{
+        font-size: 14px;
+    }
+
+    .service{
+        width: 100%;
+    }
+
+    .description p {
+        font-size: 15px;
+        width: 100%;
+    }
+
+    #featured {
+         padding: 0;
+         margin-top: 0;
+         position: relative;
+    }
+
+    .slide .title {
+        font-size: 30px;
+    }
+
+    #top-buttons{
+        width: 130%;
+        left: 5%;
+        bottom: -5%;
+    }
+
+    #call-to-action p {
+        font-size: 1.6em;
+        padding-bottom: 6px;
+        padding-top: 10px;
+    }
+
+    #recent-projects{
+        display: none;
+    }
+    #left-area{
+        width: 100%;
+    }
+
+    #sidebar{
+        width: 100%;
+    }
+
+    #content-top {
+         background: none;
+         padding-top: 0;
+    }
+
+    #content-area {
+         background: none;
+         padding: 0;
+    }
 }
