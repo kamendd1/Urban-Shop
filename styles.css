@@ -1225,6 +1225,11 @@ h3#reply-title small a {
     display: none;
 }
 
+@media only screen and (max-width: 960px){
+    /*TO DO*/
+}
+
+
 @media only screen and (min-width: 780px) and (max-width: 960px){
     .menuu{
         width: 100%;
@@ -1232,7 +1237,81 @@ h3#reply-title small a {
 
 }
 
-@media only screen and (max-width: 480px){
+@media only screen and (min-width: 525px) and (max-width: 779px){
+    .logoo{
+        width: 110%;
+    }
+
+    .menuu{
+        width: 100%;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    #top-buttons{
+        width: 130%;
+        left: 25%;
+        bottom: -5%;
+    }
+
+    #top-buttons span{
+        font-size: 20px;
+    }
+
+    .project {
+        float: left;
+        position: relative;
+        margin-right: 2.3%;
+        margin-left: 2%;
+        margin-top: 2.8%;
+        width: 29%;
+    }
+
+    .project:first-of-type {
+        display: none;
+    }
+
+    .project:last-of-type {
+        display: none;
+    }
+
+    #call-to-action p {
+        font-size: 2.2em;
+        padding-bottom: 17px;
+        padding-top: 17px;
+    }
+
+    .container-inner{
+        width: 100%;
+    }
+
+    #left-area{
+        width: 100%;
+    }
+
+    #sidebar{
+        width: 100%;
+    }
+
+    #content-top {
+        background: none;
+        padding-top: 0;
+    }
+
+    #content-area {
+        background: none;
+        padding: 0;
+    }
+}
+
+@media only screen and (min-width: 390px) and (max-width: 524px){
+
+    .footer-widget{
+        width: 100%;
+    }
+
     .logoo{
         width: 110%;
         padding: 0;
@@ -1252,18 +1331,94 @@ h3#reply-title small a {
         font-size: 25px;
         line-height: 0;
     }
+    #top-bottom{
+        height: 400px;
+    }
 
     .description p {
-        font-size: 13px;
-        width: 20%;
+        font-size: 15px;
+        width: 100%;
+    }
+
+    #featured {
+        padding: 0;
+        margin-top: 0;
+        position: relative;
+    }
+
+    #top-buttons{
+        width: 130%;
+        left: 10%;
+        bottom: 22%;
     }
 
     #top-buttons span{
-        font-size: 14px;
+        font-size: 18px;
     }
 
     .service{
         width: 100%;
+        margin-bottom: 10px;
+    }
+
+    #call-to-action p {
+        font-size: 1.6em;
+        padding-bottom: 17px;
+        padding-top: 17px;
+    }
+
+    #recent-projects{
+        display: none;
+    }
+    #left-area{
+        width: 100%;
+    }
+
+    #sidebar{
+        width: 100%;
+    }
+
+    #content-top {
+        background: none;
+        padding-top: 0;
+    }
+
+    #content-area {
+        background: none;
+        padding: 0;
+    }
+}
+
+@media only screen and (max-width: 389px){
+    .logoo{
+        width: 110%;
+        padding: 0;
+    }
+
+    .menuu{
+        display: none;
+    }
+
+    .container {
+        width: 100%;
+        margin: 0 auto;
+        position: relative;
+    }
+    #top-bottom{
+        height: 400px;
+    }
+    .heading a {
+        font-size: 25px;
+        line-height: 0;
+    }
+
+    #top-buttons span{
+        font-size: 16px;
+    }
+
+    .service{
+        width: 100%;
+        margin-bottom: 10px;
     }
 
     .description p {
@@ -1283,8 +1438,8 @@ h3#reply-title small a {
 
     #top-buttons{
         width: 130%;
-        left: 5%;
-        bottom: -5%;
+        left: 3%;
+        bottom: 22%;
     }
 
     #call-to-action p {
@@ -1312,5 +1467,9 @@ h3#reply-title small a {
     #content-area {
          background: none;
          padding: 0;
+    }
+
+    .footer-widget{
+        width: 100%;
     }
 }
