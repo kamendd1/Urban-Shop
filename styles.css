@@ -204,6 +204,10 @@ img#about-image {
     background: url("images/purple-house.png") repeat-x bottom center;
 }
 
+.ng-scope{
+    width: 100%;
+}
+
 #top-bottom .container {
     height: 550px;
 }
@@ -292,10 +296,13 @@ p#slogan {
 #main-area {
     background: url(images/main-area-bg.png) top right;
     border-top: 1px solid #fff;
+    width: 100%;
 }
 
 #main-top-shadow {
     background: url(images/main-top-shadow.png) repeat-x top right;
+    width: 100%;
+
 }
 
 .container {

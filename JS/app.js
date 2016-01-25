@@ -24,6 +24,11 @@
                 controller: 'OffersController',
                 controllerAs: CONTROLLER_VIEW_MODEL
             })
+            .when('/alloffers', {
+                templateUrl: PARTIALS_PREFIX + 'offers/alloffers.html',
+                controller: 'AllOffersController',
+                controllerAs: CONTROLLER_VIEW_MODEL
+            })
             .otherwise({ redirectTo: '/' });
     }
 

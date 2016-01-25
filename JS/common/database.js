@@ -4,7 +4,7 @@
 
     function data($http, $q,notifier, baseServiceUrl,authorization) {
 
-        function get(url, queryParams) {
+/*        function get(url, queryParams) {
             var defered = $q.defer();
             var authHeader = authorization.getAuthorizationHeader();
 
@@ -20,6 +20,26 @@
                     defered.reject(error)
                 })
             return defered.promise;
+        }*/
+
+        function get(object, params, value) {
+            var deferred = $q.defer();
+            var authHeader = authorization.getAuthorizationHeader();
+            var dbObject = Parse.Object.extend(object);
+            var query = new Parse.Query(dbObject);
+
+            query.equalTo(params, value);
+            query.find({
+                success: function (response) {
+                    deferred.resolve(response.data); //.data i property
+                },
+                error: function (error) {
+                    error = getErrorMessage(error);
+                    notifier.error(error);
+                    deferred.reject(error)
+                }
+            });
+            return deferred.promise;
         }
 
         function post(object, postData) {
