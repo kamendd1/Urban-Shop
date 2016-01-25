@@ -1,0 +1,41 @@
+<div class="container">
+    <div class="well">
+        <form name="signUpForm" class="form-horizontal">
+            <fieldset>
+                <legend>Add New Offer</legend>
+                <div class="form-group">
+                    <label for="title" class="col-md-2 control-label"> Title</label>
+                    <div class="col-md-10">
+                        <input id="title" name="uEmail" type="text" placeholder="Title" ng-model="offer.title" required="required" class="form-control"/>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="price" class="col-md-2 control-label">Price</label>
+                    <div class="col-md-10">
+                        <input id="price" name="Description" type="number" placeholder="Offer Price" ng-model="offer.price" required="required" class="form-control"/>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="image" class="col-md-2 control-label">Image</label>
+                    <div class="col-md-10">
+                        <input id="image" name="uPass" type="text" placeholder="Offer Image"
+                               ng-model="offer.image" required="required" class="form-control"/>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="description" class="col-md-2 control-label">Description</label>
+                    <div class="col-md-10">
+                        <textarea id="description" name="Description" type="text" placeholder="Offer Description" ng-model="offer.description" required="required" class="form-control"></textarea>
+                    </div>
+                </div>
+
+                <div class="pull-right">
+                    <button ng-click="addoffer(offer)" ng-disabled="signUpForm.$invalid" class="btn btn-primary">
+                        Create
+                    </button>
+                    <a href="#/" class="btn btn-primary">Cancel</a>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</div>
