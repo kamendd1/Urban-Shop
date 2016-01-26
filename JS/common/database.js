@@ -28,7 +28,6 @@
         function post(object, postData) {
             var deferred = $q.defer();
             var authHeader = authorization.getAuthorizationHeader();
-
             var DbObject = Parse.Object.extend(object);
             var dbObject = new DbObject();
 

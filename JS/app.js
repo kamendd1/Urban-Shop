@@ -16,6 +16,12 @@
                 controllerAs: CONTROLLER_VIEW_MODEL
 
             })
+            .when('/login', {
+                templateUrl: PARTIALS_PREFIX + 'identity/login.html',
+                controller: 'LoginCtrl',
+                controllerAs: CONTROLLER_VIEW_MODEL
+
+            })
             .when('/unauthorized', {
                 template:'<h1>YOU are not authorized</h1>'
             })
