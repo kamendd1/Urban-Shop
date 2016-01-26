@@ -1,3 +1,11 @@
 <div class="container">
-
+    <ul>
+        <li ng-repeat="offer in vm.offers">
+            <form><label>Offer</label>
+            <h4>{{offer.objectId}} - {{offer.title}}</h4>
+            <img src='{{offer.image}}' width="350px"/><br/>
+            <textarea>{{offer.description}}</textarea>
+            </form>
+        </li>
+    </ul>
 </div>

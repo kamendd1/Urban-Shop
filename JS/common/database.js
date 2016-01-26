@@ -4,24 +4,6 @@
 
     function data($http, $q,notifier, baseServiceUrl,authorization) {
 
-/*        function get(url, queryParams) {
-            var defered = $q.defer();
-            var authHeader = authorization.getAuthorizationHeader();
-
-
-            $http.get(baseServiceUrl + '/' + url, {
-                params: queryParams,
-                headers: authHeader })
-                .then(function (response) {
-                    defered.resolve(response.data); //.data i property
-                }, function (error) {
-                    error = getErrorMessage(error);
-                    notifier.error(error);
-                    defered.reject(error)
-                })
-            return defered.promise;
-        }*/
-
         function get(object, params, value) {
             var deferred = $q.defer();
             var authHeader = authorization.getAuthorizationHeader();
@@ -31,7 +13,7 @@
             query.equalTo(params, value);
             query.find({
                 success: function (response) {
-                    deferred.resolve(response.data); //.data i property
+                    deferred.resolve(response); //.data i property
                 },
                 error: function (error) {
                     error = getErrorMessage(error);
@@ -42,6 +24,7 @@
             return deferred.promise;
         }
 
+
         function post(object, postData) {
             var deferred = $q.defer();
             var authHeader = authorization.getAuthorizationHeader();
@@ -51,8 +34,6 @@
 
 
             dbObject.save(postData).then(function () {
-                console.log('saving data');
-
                 deferred.resolve();
 
             }, function (response) {
@@ -72,7 +53,6 @@
         }
 
         function put() {
-
             throw new Error('not implemented')
         }
 

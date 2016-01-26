@@ -3,13 +3,30 @@
  */
 (function () {
     'use strict';
-
-    function AllOffersController() {
+//TODO: Rename To OffersController
+    function AllOffersController(allOffers) {
         var vm = this;
 
-        function getAllOffers() {
-            return database.get(data);
-        }
+
+        allOffers.getAllOffers()
+            .then(function (allOffers) {
+                console.log('offer controller');
+
+                console.log(allOffers);
+
+                var offers = [];
+                if(allOffers){
+                for (var i = 0; i < allOffers.length; i += 1) {
+                    offers.push(allOffers[i].toJSON());
+                }
+                console.log(offers);
+                vm.offers = offers;
+                } else {
+                    offers = [{
+                        error: "No offers to display!"
+                    }]
+                }
+            });
 
         //statistics.getStats()
         //.then(function (stats) {
@@ -31,5 +48,5 @@
 
     }
     angular.module('myApp.controllers')
-        .controller('AllOffersController', [AllOffersController])
+        .controller('AllOffersController', ['allOffers', AllOffersController])
 }());

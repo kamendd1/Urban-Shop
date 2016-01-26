@@ -4,13 +4,14 @@
 (function(){
     'use strict';
 
-    function allOffers(data) {
-        var PROJECTS_URL = 'api/projects';
-
+    function allOffers(database) {
+        console.log('all offers service');
         function getAllOffers() {
-            return database.get({
+            var object= 'Offer',
+                params = 'objectId',
+                value='XC3atsRlc7';
 
-            });
+            return database.get(object);
         }
 
 /*        function filterTrips(filters) {
@@ -34,5 +35,5 @@
     }
 
     angular.module('myApp.services')
-        .factory('allOffers', ['data', allOffers])
+        .factory('allOffers', ['database', allOffers])
 }());
