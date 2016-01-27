@@ -219,7 +219,7 @@ img#about-image {
 }
 
 #header {
-    background: url("images/footer-home.png") repeat-x;
+    background: url(images/top-center-bg.jpg) center;
 }
 
 .headeer{
@@ -490,6 +490,9 @@ span#down-arrow {
 #category-name {
     padding-bottom: 30px;
     padding-top: 60px;
+    padding-left:13%;
+    background: url(images/top-center-bg.jpg) center;
+    width: 100%;
 }
 
 .category-title {
