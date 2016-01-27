@@ -228,6 +228,10 @@ img#about-image {
     padding-right: 13%;
 }
 
+.offer{
+    padding-left: 10%;
+}
+
 #logo {
     float: left;
     margin-right: 8px;
@@ -332,7 +336,7 @@ p#slogan {
 .service {
     float: left;
     width: 27%;
-    margin-right: 7%;
+    margin-left: 5%;
     margin-bottom: 5%;
     padding-top: 10%
 }
@@ -837,6 +841,7 @@ ul#top-menu li:hover ul ul, ul#top-menu li.sfHover ul ul {
     width: 280px;
     position: relative;
     padding: 0 0 30px 35px;
+    margin-left: 2%;
 }
 
 .widget .widgettitle {

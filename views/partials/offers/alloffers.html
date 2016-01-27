@@ -8,15 +8,23 @@
 <div id="main-area">
     <div id="main-top-shadow">
         <div class="container">
-    <ul>
+            <div id="content-area">
+                <div id="content-top" class="clearfix">
+                    <div id="left-area">
+    <ul class="offer">
         <li ng-repeat="offer in vm.offers">
             <form><label>Offer</label>
-            <h4>{{offer.objectId}} - {{offer.title}}</h4>
-            <img src='{{offer.image}}' width="350px"/><br/>
-            <textarea>{{offer.description}}</textarea>
+                <h2 class="heading title">{{offer.title}}</h2>
+                <div class="row">
+            <img src='{{offer.image}}' width="250px" class="col-md-3"/>
+            <p class="col-md-7">{{offer.description}}</p>
+                </div>
             </form>
         </li>
     </ul>
         </div>
+                </div> 	<!-- end #left-area -->
+                </div> <!-- end #content-top -->
+            </div> <!-- end #content-area -->
     </div>
 </div>
