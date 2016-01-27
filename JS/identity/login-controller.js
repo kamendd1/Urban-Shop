@@ -3,49 +3,21 @@
  */
 (function () {
     'use strict';
-    Parse.initialize("FX5qfbCqpaQfSQUUYruolH7YmoN1WwmZSyPZGrcQ", "mln7VPvMITZqcdhY3cpInNPfwLQJFifttmXtttil");
 
 
-    function LoginCtrl($scope, $location, notifier, identity, auth) {
+    function LoginCtrl($scope, $location,auth, notifier) {
 
-/*        function login (username, password, callback) {
-                Parse.User.logIn(username, password, {
-                    success: function (user) {
-                        var loggedInUser = user;
-                        callback(user);
-                        console.log(user)
-                    },
-                    error: function (user, error) {
-                        alert("Error: " + error.message);
-                    }
-                });
-            }*/
+        $scope.login = function (user) {
+            console.log('reg cont - log in');
 
-/*        $scope.identity = identity;
-
-        function loginSuccessful(user) {
-            $rootScope.$apply(function() {
-                $rootScope.currentUser = Parse.User.current();
-                $location.path("/");
-            });
+            auth.login(user).then(function () {
+                notifier.success('Logged successful!');
+                $location.path('/');
+            }, function (error) {
+                notifier.error(error);
+            })
         }
 
-        function loginUnsuccessful(user, error) {
-            alert("Error: " + error.message + " (" + error.code + ")");
-        }
-
-        $scope.login = function() {
-            var username = $scope.login.username;
-            var password = $scope.login.password;
-
-            console.log(username);
-            console.log(password);
-
-            Parse.User.logIn(username, password, {
-                success: loginSuccessful,
-                error: loginUnsuccessful
-            });
-        }*/;
 
         $scope.logout = function () {
             auth.logout().then(function () {

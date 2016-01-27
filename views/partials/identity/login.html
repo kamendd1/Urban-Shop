@@ -1,9 +1,11 @@
-<form ng-submit="login()">
+<form name="logInForm">
     <fieldset>
         <label>Username:</label>
-        <input type="text" class="span3" ng-model="login.username" required /><br/>
+        <input type="text" class="span3" ng-model="user.username" required /><br/>
         <label>Password:</label>
-        <input type="password" ng-model="login.password" required /><br/>
-        <input type="submit" value="Log in" class="btn btn-orange" />
+        <input type="password" ng-model="user.password" required /><br/>
+        <button ng-click="login(user)" ng-disabled="signUpForm.$invalid" class="btn btn-orange">
+            Log in
+        </button>
     </fieldset>
 </form>

@@ -6,7 +6,7 @@
                 <div class="form-group">
                     <label for="new-user-email" class="col-md-2 control-label">E-mail</label>
                     <div class="col-md-10">
-                        <input id="new-user-email" name="uEmail" type="email" placeholder="E-mail"  required="required" class="form-control"/>
+                        <input id="new-user-email" name="uEmail" type="email" placeholder="E-mail" ng-model="user.email" required="required" class="form-control"/>
                         <div ng-show="signUpForm.$submitted || signUpForm.uEmail.$touched">
                             <span ng-show="signUpForm.uEmail.$error.required">Tell us your Email.</span>
                             <span ng-show="signUpForm.uEmail.$error.email">This is not a valid Email.</span>
@@ -16,13 +16,13 @@
                 <div class="form-group">
                     <label for="new-username" class="col-md-2 control-label">Username</label>
                     <div class="col-md-10">
-                        <input id="new-username" name="username" type="username" placeholder="Username"  required="required" class="form-control"/>
+                        <input id="new-username" name="username" type="username" placeholder="Username" ng-model="user.username" required="required" class="form-control"/>
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="new-user-password" class="col-md-2 control-label">Password</label>
                     <div class="col-md-10">
-                        <input id="new-user-password" name="uPass"type="password" placeholder="Password"
+                        <input id="new-user-password" name="uPass" type="password" placeholder="Password"
                                ng-model="user.password" ng-minlength=6 ng-maxlength=40 required="required" class="form-control"/>
                         <div ng-show="signUpForm.$submitted || signUpForm.uPass.$touched">
                             <span ng-show="signUpForm.uPass.$error.required">Tell us your password.</span>
