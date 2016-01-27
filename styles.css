@@ -208,10 +208,6 @@ img#about-image {
     width: 100%;
 }
 
-#top-bottom .container {
-    height: 500px;
-}
-
 #top {
     background: url(images/top-bg.png) repeat-x;
 }
@@ -254,7 +250,7 @@ p#slogan {
 
 #top-buttons {
     position:absolute;
-    bottom: -22%;
+    top: 35%;
     margin: auto;
     width: 70%;
     left: 30%;
@@ -319,6 +315,7 @@ p#slogan {
 
 #hooome{
     width: 100%;
+    height: 500px;
 }
 
 .home #main-top-shadow .container {
@@ -1338,6 +1335,8 @@ h3#reply-title small a {
         width: 100%;
         margin: 0 auto;
         position: relative;
+        padding:0;
+        margin:0;
     }
 
     .heading a {
