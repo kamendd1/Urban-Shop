@@ -219,7 +219,11 @@ img#about-image {
 }
 
 #header {
-    padding-top: 35px;
+    background: url("images/footer-home.png") repeat-x;
+}
+
+.headeer{
+    margin-top: 35px;
 }
 
 #logo {
@@ -304,6 +308,7 @@ p#slogan {
 .container {
     width: 100%;
     margin: 0 auto;
+    padding: 0!important;
     position: relative;
 }
 
