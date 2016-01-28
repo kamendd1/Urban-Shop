@@ -11,7 +11,7 @@
             console.log('reg cont - log in');
 
             auth.login(user).then(function () {
-                notifier.success('Logged in successfully!');
+                notifier.success('Logged in successfull!');
                 $location.path('/');
             }, function (error) {
                 notifier.error(error);
@@ -35,5 +35,5 @@
     }
 
     angular.module('myApp.controllers')
-        .controller('LoginCtrl', ['$scope', '$location', 'auth', 'notifier', LoginCtrl]);
+        .controller('LoginCtrl', ['$scope', '$location', 'auth', 'notifier', 'identity', LoginCtrl]);
 }());

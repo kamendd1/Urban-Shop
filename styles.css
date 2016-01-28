@@ -247,6 +247,10 @@ p#slogan {
     padding-top: 23px;
 }
 
+.contt{
+    padding:0;
+}
+
 #menu-content {
     background: rgb(255,255,255); /* Old browsers */
     background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(235,235,235,1) 50%, rgba(219,219,219,1) 51%, rgba(216,216,216,1) 100%); /* FF3.6-15 */
@@ -255,7 +259,11 @@ p#slogan {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#d8d8d8',GradientType=0 ); /* IE6-9 */
     border: 1px solid black;
     border-radius: 12px;
-    height: 48px;
+    }
+
+.naav{
+    background-color: transparent;
+    border: none;
     }
 
 #top-buttons {
@@ -672,9 +680,10 @@ a.readmore:hover {
 }
 
 ul#top-menu li {
-    margin-right: 12px;
-    margin-left: 12px;
+    padding-right: 10px;
+    padding-left: 10px;
     padding-top: 15px;
+    padding-bottom:15px;
     float: left;
 }
 ul#top-menu a {
@@ -1254,21 +1263,10 @@ h3#reply-title small a {
 }
 
 
-@media only screen and (min-width: 780px) and (max-width: 960px){
-    .menuu{
-        width: 100%;
-    }
-
+@media only screen and (min-width: 760px) and (max-width: 960px){
 }
 
-@media only screen and (min-width: 525px) and (max-width: 779px){
-    .logoo{
-        width: 110%;
-    }
-
-    .menuu{
-        width: 100%;
-    }
+@media only screen and (min-width: 525px) and (max-width: 759px){
 
     .container {
         width: 100%;
@@ -1276,8 +1274,8 @@ h3#reply-title small a {
 
     #top-buttons{
         width: 130%;
-        width: 70%;
         left: 25%;
+        top: 33%;
         z-index: 8;
     }
 
@@ -1337,21 +1335,11 @@ h3#reply-title small a {
         width: 100%;
     }
 
-    .logoo{
-        width: 110%;
-        padding: 0;
-    }
-
-    .menuu{
-        display: none;
-    }
-
     .container {
         width: 100%;
         margin: 0 auto;
         position: relative;
         padding:0;
-        margin:0;
     }
 
     .heading a {
@@ -1376,7 +1364,7 @@ h3#reply-title small a {
     #top-buttons{
         width: 130%;
         left: 10%;
-        bottom: 22%;
+        top: 26%;
     }
 
     #top-buttons span{
@@ -1384,7 +1372,7 @@ h3#reply-title small a {
     }
 
     .service{
-        width: 100%;
+        width: 95%;
         margin-bottom: 10px;
     }
 
@@ -1417,14 +1405,6 @@ h3#reply-title small a {
 }
 
 @media only screen and (max-width: 389px){
-    .logoo{
-        width: 110%;
-        padding: 0;
-    }
-
-    .menuu{
-        display: none;
-    }
 
     .container {
         width: 100%;
@@ -1444,14 +1424,16 @@ h3#reply-title small a {
     }
 
     .service{
-        width: 100%;
+        width: 95%;
         margin-bottom: 10px;
+        margin-top: 30px;
     }
 
     .description p {
         font-size: 15px;
         width: 100%;
     }
+
 
     #featured {
          padding: 0;
@@ -1466,7 +1448,7 @@ h3#reply-title small a {
     #top-buttons{
         width: 130%;
         left: 3%;
-        bottom: 22%;
+        top: 25%;
     }
 
     #call-to-action p {

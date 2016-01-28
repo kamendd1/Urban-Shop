@@ -1,6 +1,8 @@
 (function () {
     'use strict';
+/*
     Parse.initialize("FX5qfbCqpaQfSQUUYruolH7YmoN1WwmZSyPZGrcQ", "mln7VPvMITZqcdhY3cpInNPfwLQJFifttmXtttil");
+*/
 
     function data($http, $q,notifier, baseServiceUrl,authorization) {
 
@@ -24,6 +26,28 @@
             return deferred.promise;
         }
 
+/*            function get(url, params) {
+                var deferred = $q.defer();
+                var authHeader = authorization.getAuthorizationHeader();
+                var url = 'classes/offer';
+
+                $http.get(baseServiceUrl + url, {
+                        params: params,
+                        headers: {
+                            'X-Parse-Application-Id': 'FX5qfbCqpaQfSQUUYruolH7YmoN1WwmZSyPZGrcQ',
+                            'X-Parse-REST-API-Key': 'mln7VPvMITZqcdhY3cpInNPfwLQJFifttmXtttil'
+                        }
+                    })
+                    .then(function (response) {
+                        deferred.resolve(response.data);
+                    }, function (error) {
+                        error = getErrorMessage(error);
+                        notifier.error(error);
+                        deferred.reject(error);
+                    });
+
+                return deferred.promise;
+            }*/
 
         function post(object, postData) {
             var deferred = $q.defer();

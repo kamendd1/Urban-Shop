@@ -45,5 +45,5 @@
     angular.module('myApp', ['ngRoute', 'ngCookies', 'myApp.filters', 'myApp.controllers', 'myApp.directives']).
         config(['$routeProvider', config])
         .value('toastr', toastr)
-        .constant('baseServiceUrl', 'http://spa2014.bgcoder.com');
+        .constant('baseServiceUrl', 'https://api.parse.com/1/');
 }());
