@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c3f19765-bfd0-4df4-81ed-a58359b04645" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/comments.html" afterPath="$PROJECT_DIR$/partials/comments.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/house.html" afterPath="$PROJECT_DIR$/partials/house.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles.css" afterPath="$PROJECT_DIR$/styles.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/partials/home/home.html" afterPath="$PROJECT_DIR$/views/partials/home/home.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/partials/identity/login.html" afterPath="$PROJECT_DIR$/views/partials/identity/login.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/partials/identity/register.html" afterPath="$PROJECT_DIR$/views/partials/identity/register.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/partials/offers/alloffers.html" afterPath="$PROJECT_DIR$/views/partials/offers/alloffers.html" />
     </list>
     <ignored path="Urban-Shop.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -54,8 +46,8 @@
       <file leaf-file-name="styles.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/styles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.33269963">
-              <caret line="773" column="24" selection-start-line="773" selection-start-column="24" selection-end-line="773" selection-end-column="24" />
+            <state vertical-scroll-proportion="0.30038023">
+              <caret line="281" column="59" selection-start-line="281" selection-start-column="56" selection-end-line="281" selection-end-column="59" />
               <folding />
             </state>
           </provider>
@@ -900,8 +892,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/styles.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33269963">
-          <caret line="773" column="24" selection-start-line="773" selection-start-column="24" selection-end-line="773" selection-end-column="24" />
+        <state vertical-scroll-proportion="0.30038023">
+          <caret line="281" column="59" selection-start-line="281" selection-start-column="56" selection-end-line="281" selection-end-column="59" />
           <folding />
         </state>
       </provider>

@@ -731,7 +731,9 @@ p.description a:hover {
 }
 
 .featured-img span.overlay {
+    /*
     background: url(images/featured-image-overlay.png) no-repeat;
+    */
     display: block;
     width: 318px;
     height: 204px;
@@ -760,7 +762,9 @@ p.description a:hover {
 }
 
 .featured .video-slide {
+    /*
     background: url(images/featured-image-overlay.png) no-repeat;
+    */
     padding: 6px 5px 16px;
 }
 
@@ -771,7 +775,9 @@ p.description a:hover {
     background: url(images/featured-leftarrow.png) no-repeat;
     width: 22px;
     height: 34px;
-    text-indent: -9999%;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
     .left-arrow {
