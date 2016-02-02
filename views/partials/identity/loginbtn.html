@@ -1,6 +1,6 @@
 <div ng-controller="LoginCtrl">
     <div ng-show="auth.isAuthenticated()">
-        <li id="menu-item-62"><a href="#/login">Logout</a></li>
+        <li id="menu-item-62"><a href="#/" ng-click="logout()">Logout</a></li>
     </div>
     <div ng-hide="auth.isAuthenticated()">
         <li id="menu-item-622"><a href="#/login">Login</a></li>

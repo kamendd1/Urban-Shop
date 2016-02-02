@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c3f19765-bfd0-4df4-81ed-a58359b04645" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/partials/offers/addoffer.html" afterPath="$PROJECT_DIR$/views/partials/offers/addoffer.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/partials/identity/loginbtn.html" afterPath="$PROJECT_DIR$/views/partials/identity/loginbtn.html" />
     </list>
     <ignored path="Urban-Shop.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -66,20 +65,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login-controller.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="login-controller.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/identity/login-controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="7" column="46" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="46" />
+            <state vertical-scroll-proportion="0.0929432">
+              <caret line="15" column="56" selection-start-line="15" selection-start-column="56" selection-end-line="15" selection-end-column="56" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5207207">
+            <state vertical-scroll-proportion="-11.115385">
               <caret line="55" column="104" selection-start-line="55" selection-start-column="104" selection-end-line="55" selection-end-column="104" />
               <folding />
             </state>
@@ -89,8 +88,8 @@
       <file leaf-file-name="loginbtn.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/partials/identity/loginbtn.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
-              <caret line="0" column="29" selection-start-line="0" selection-start-column="20" selection-end-line="0" selection-end-column="29" />
+            <state vertical-scroll-proportion="-5.230769">
+              <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -128,9 +127,9 @@
         <option value="$PROJECT_DIR$/js/common/database.js" />
         <option value="$PROJECT_DIR$/js/offers/offers-controller.js" />
         <option value="$PROJECT_DIR$/views/partials/offers/addoffer.html" />
-        <option value="$PROJECT_DIR$/js/identity/login-controller.js" />
-        <option value="$PROJECT_DIR$/views/partials/identity/loginbtn.html" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/views/partials/identity/loginbtn.html" />
+        <option value="$PROJECT_DIR$/js/identity/login-controller.js" />
       </list>
     </option>
   </component>
@@ -833,14 +832,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/partials/identity/loginbtn.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="29" selection-start-line="0" selection-start-column="20" selection-end-line="0" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/identity/register-controller.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.49741825">
@@ -865,6 +856,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.115385">
+          <caret line="55" column="104" selection-start-line="55" selection-start-column="104" selection-end-line="55" selection-end-column="104" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/partials/identity/loginbtn.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.230769">
+          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/js/identity/auth.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -875,16 +882,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/identity/login-controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="46" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5207207">
-          <caret line="55" column="104" selection-start-line="55" selection-start-column="104" selection-end-line="55" selection-end-column="104" />
+        <state vertical-scroll-proportion="0.0929432">
+          <caret line="15" column="56" selection-start-line="15" selection-start-column="56" selection-end-line="15" selection-end-column="56" />
           <folding />
         </state>
       </provider>

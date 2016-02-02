@@ -13,7 +13,7 @@
             console.log('reg cont - log in');
 
             auth.login(user).then(function () {
-                notifier.success('Logged in successfull!');
+                notifier.success('Logged in successfully!');
                 $location.path('/');
             }, function (error) {
                 notifier.error(error);
