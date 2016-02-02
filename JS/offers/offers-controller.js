@@ -4,7 +4,8 @@
 (function () {
     'use strict';
 
-    function OffersController($scope, $location, offersService, notifier) {
+    function OffersController($scope, $location, offersService, notifier, auth) {
+        $scope.auth = auth;
         $scope.addoffer = function (offer) {
             console.log('reg cont - sign up');
 
@@ -17,5 +18,5 @@
         }
     }
 
-    angular.module('myApp.controllers').controller('OffersController', ['$scope', '$location', 'offersService', 'notifier', OffersController]);
+    angular.module('myApp.controllers').controller('OffersController', ['$scope', '$location', 'offersService', 'notifier', 'auth', OffersController]);
 }());

@@ -45,5 +45,5 @@
     angular.module('myApp', ['ngRoute', 'ngCookies', 'myApp.filters', 'myApp.controllers', 'myApp.directives']).
         config(['$routeProvider', config])
         .value('toastr', toastr)
-        .constant('baseServiceUrl', 'https://api.parse.com/1/');
+        .constant('baseServiceUrl', 'https://api.parse.com/1/apps/urbanshop--2/');
 }());

@@ -1,5 +1,5 @@
 <div class="container">
-    <div class="well">
+    <div class="well" ng-show="auth.isAuthenticated()">
         <form name="signUpForm" class="form-horizontal">
             <fieldset>
                 <legend>Add New Offer</legend>
@@ -38,4 +38,5 @@
             </fieldset>
         </form>
     </div>
+    <div class="well" ng-hide="auth.isAuthenticated()">Not Authenticated!</div>
 </div>
