@@ -22,17 +22,9 @@
 
 
         $scope.logout = function () {
-            auth.logout().then(function () {
-                notifier.success('Successful logout!');
-                if ($scope.user) {
-                    $scope.user.email = '';
-                    $scope.user.username = '';
-                    $scope.user.password = '';
-                }
-
-                $scope.loginForm.$setPristine();
-                $location.path('/');
-            })
+            auth.logout();
+            notifier.success('Successful logout!');
+            $location.path('/');
         }
     }
 

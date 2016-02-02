@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c3f19765-bfd0-4df4-81ed-a58359b04645" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/partials/identity/loginbtn.html" afterPath="$PROJECT_DIR$/views/partials/identity/loginbtn.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/identity/login-controller.js" afterPath="$PROJECT_DIR$/js/identity/login-controller.js" />
     </list>
     <ignored path="Urban-Shop.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -68,8 +68,8 @@
       <file leaf-file-name="login-controller.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/identity/login-controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0929432">
-              <caret line="15" column="56" selection-start-line="15" selection-start-column="56" selection-end-line="15" selection-end-column="56" />
+            <state vertical-scroll-proportion="0.6781411">
+              <caret line="27" column="8" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -882,8 +882,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/identity/login-controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0929432">
-          <caret line="15" column="56" selection-start-line="15" selection-start-column="56" selection-end-line="15" selection-end-column="56" />
+        <state vertical-scroll-proportion="0.6781411">
+          <caret line="27" column="8" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="8" />
           <folding />
         </state>
       </provider>
