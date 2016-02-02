@@ -1,5 +1,5 @@
 /**
- * Created by Kamen on 25.1.2016 г..
+ * Created by Kamen on 2.2.2016 г..
  */
 (function () {
     'use strict';
@@ -16,11 +16,11 @@
 
                 var offers = [];
                 if(allOffers){
-                for (var i = 0; i < allOffers.length; i += 1) {
-                    offers.push(allOffers[i].toJSON());
-                }
-                console.log(offers);
-                vm.offers = offers;
+                    for (var i = 0; i < allOffers.length; i += 1) {
+                        offers.push(allOffers[i].toJSON());
+                    }
+                    console.log(offers);
+                    vm.offers = offers;
                 } else {
                     offers = [{
                         error: "No offers to display!"

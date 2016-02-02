@@ -6,7 +6,23 @@
 //TODO: refactor
     function auth($http, $q, identity, authorization, baseServiceUrl, database) {
 
-        var loggedInUser;
+        var userKey;
+        // get all keys of the local storage
+        var keys = Object.keys(localStorage);
+        console.log(keys);
+
+        //find the key with the user
+        for(var i = 0; i<keys.length; i++){
+            console.log(keys[i]);
+            if(keys[i].toString().endsWith('User')){
+                userKey = keys[i];
+            }
+        }
+        console.log(userKey);
+
+        //get info of the user
+        var loggedInUser = localStorage.getItem(userKey);
+        console.log(loggedInUser);
 
         function signup(user) {
 
@@ -68,6 +84,7 @@
             if (loggedInUser) {
                 return loggedInUser;
             }
+            return null;
         }
 
         function isAuthenticated() {
