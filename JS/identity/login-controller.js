@@ -5,7 +5,9 @@
     'use strict';
 
 
-    function LoginCtrl($scope, $location,auth, notifier) {
+    function LoginCtrl($scope, $location, auth, notifier) {
+
+        $scope.auth = auth;
 
         $scope.login = function (user) {
             console.log('reg cont - log in');
