@@ -18,7 +18,7 @@
             }, function (error) {
                 notifier.error(error);
             })
-        }
+        };
 
 
         $scope.logout = function () {

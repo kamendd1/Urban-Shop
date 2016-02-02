@@ -15,7 +15,7 @@
         <li ng-repeat="offer in vm.offers">
             <form><label>Offer</label>
                 <h2 class="heading title">{{offer.title}}</h2>
-                Posted on: <span>{{offer.createdAt}}</span>
+                Posted by: <span>{{offer.postedBy.username}}</span> Posted on: <span>{{offer.createdAt}}</span>
                 <div class="row">
             <img src='{{offer.image}}' width="250px" class="col-md-3"/>
             <p class="col-md-7">{{offer.description}}</p>

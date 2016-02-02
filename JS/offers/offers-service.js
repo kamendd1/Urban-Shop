@@ -3,7 +3,7 @@
  */
 (function () {
     'use strict';
-    function offersService($http, $q, identity, authorization, baseServiceUrl,database) {
+    function offersService($http, $q, identity, authorization, baseServiceUrl, database, auth) {
 
     function addoffer(offer) {
         console.log('auth - sign up');
@@ -11,12 +11,19 @@
         var deferred = $q.defer();
 
         var object = 'Offer';
+        var user = auth.getUser().toJSON();
+
+        var postUser = {
+            id: user.objectId,
+            username: user.username
+        };
 
         var postData = {
             title: offer.title,
             price: offer.price,
             image: offer.image,
-            description: offer.description
+            description: offer.description,
+            postedBy: postUser
 
         };
 
@@ -52,6 +59,6 @@
 }
 
 angular.module('myApp.services')
-    .factory('offersService', ['$http', '$q', 'identity', 'authorization', 'baseServiceUrl','database', offersService]);
+    .factory('offersService', ['$http', '$q', 'identity', 'authorization', 'baseServiceUrl','database', 'auth', offersService]);
 }());
 
