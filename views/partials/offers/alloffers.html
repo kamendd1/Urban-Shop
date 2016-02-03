@@ -19,7 +19,7 @@
                                     Posted by: <span>{{offer.postedBy.username}}</span> Posted on: <span>{{offer.createdAt | beautifulDate}}</span>
                                     <div class="row">
                                         <img src='{{offer.image}}' width="250px" class="col-md-3"/>
-                                        <p class="col-md-7">{{offer.description}}</p>
+                                        <p class="col-md-7">{{offer.description.slice(0, 400)}}</p>
                                     </div>
                                 </form>
                             </li>
