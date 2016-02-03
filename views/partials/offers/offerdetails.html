@@ -19,20 +19,18 @@
                             <div id="comment-wrap" class="comment-wraap">
 
 
-                                <h3 id="comments" class="heading comments">9 Comments</h3>
+                                <h3 id="comments" class="heading comments">{{vm.comments.length}} Comments</h3>
 
 
                                 <ol class="commentlist clearfix">
-                                    <li class="comment even thread-even depth-1" id="li-comment-95">
+                                    <li ng-repeat="comment in vm.comments" class="comment even thread-even depth-1" id="li-comment-95">
                                         <div id="comment-95" class="comment-body clearfix">
                                             <div class="comment-wrap">
                                                 <div class="comment-meta commentmetadata">
-                                                    <span class="fn"><a href='#' rel='external nofollow' class='url'>Mr WordPress</a></span> | <span class="comment-date">September 4, 2008</span> </div>
+                                                    <span class="fn">{{comment.user.username}}</span> | <span class="comment-date">{{comment.createdAt}}</span> </div>
                                                 <div class="comment-content">
-                                                    <p>Hi, this is a comment.<br />To delete a comment, just log in and view the post&#039;s comments. There you will have the option to edit or delete them.</p>
+                                                    <p>{{comment.content}}</p>
                                                 </div> <!-- end comment-content-->
-                                                <div class="reply-container readmore">
-                                                    <a rel='nofollow' class='comment-reply-link' href='#'>Reply</a></div>
                                             </div> <!-- end comment-wrap-->
                                             <div class="comment-arrow"></div>
                                         </div> <!-- end comment-body-->

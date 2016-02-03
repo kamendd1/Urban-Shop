@@ -12,7 +12,7 @@
             var deferred = $q.defer();
 
 
-            var comment = 'Comment';
+            var object = 'Comment';
 
             var user = auth.getUser();
 
@@ -26,12 +26,12 @@
             var postData = {
                 offerId:offerId,
                 user: postUser,
-                content: comment.text
+                content: comment.content
             };
 
             console.log(postData);
 
-            database.post(comment, postData).then(function () {
+            database.post(object, postData).then(function () {
                 console.log('reg');
 
                 deferred.resolve();
@@ -52,6 +52,13 @@
             return deferred.promise;
         }
 
+        function getCommentsByOfferId(offerId){
+            var object = 'Comment',
+                params = 'offerId';
+
+            return database.get(object, params, offerId)
+        }
+
         /*  function getAllOffers() {
          var object = 'Offer';
 
@@ -66,7 +73,8 @@
          }*/
 
         return {
-            addComment: addComment
+            addComment: addComment,
+            getCommentsByOfferId: getCommentsByOfferId
             /*getAllOffers: getAllOffers,
              getOfferById:getOfferById*/
         }

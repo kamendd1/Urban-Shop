@@ -4,7 +4,7 @@
 (function () {
     'use strict';
 //TODO: Rename To OffersController
-    function OfferDetailsController($routeParams, $scope, offersService) {
+    function OfferDetailsController($routeParams, $scope, offersService, commentsService) {
         var vm = this;
         var offerId = $routeParams.id;
         $scope.offerId = offerId;
@@ -30,6 +30,22 @@
                 }
             });
 
+        commentsService.getCommentsByOfferId(offerId)
+            .then(function(allComments){
+                var comments = [];
+                if(allComments){
+                    for (var i= 0; i < allComments.length; i+=1){
+                        comments.push(allComments[i].toJSON());
+                    }
+                    vm.comments = comments;
+                } else {
+                    comments = [{
+                        error: 'No Comments to Display!'
+                    }]
+                }
+            })
+
+
         //statistics.getStats()
         //.then(function (stats) {
         //    vm.stats = stats;
@@ -50,5 +66,5 @@
 
     }
     angular.module('myApp.controllers')
-        .controller('OfferDetailsController', ['$routeParams', '$scope', 'offersService', OfferDetailsController])
+        .controller('OfferDetailsController', ['$routeParams', '$scope', 'offersService', 'commentsService', OfferDetailsController])
 }());
