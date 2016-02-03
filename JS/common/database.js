@@ -6,6 +6,28 @@
 
     function data($http, $q,notifier, baseServiceUrl,authorization) {
 
+        function getPaging (object, displayLimit,page) {
+            var deferred = $q.defer();
+            var authHeader = authorization.getAuthorizationHeader();
+            var dbObject = Parse.Object.extend(object);
+            var query = new Parse.Query(dbObject);
+
+            query.descending('createdAt');
+            query.limit(displayLimit);
+            query.skip(displayLimit*page);
+            query.find({
+                success: function (response) {
+                    deferred.resolve(response); //.data i property
+                },
+                error: function (error) {
+                    error = getErrorMessage(error);
+                    notifier.error(error);
+                    deferred.reject(error)
+                }
+            });
+            return deferred.promise;
+        }
+
         function get(object, params, value) {
             var deferred = $q.defer();
             var authHeader = authorization.getAuthorizationHeader();
@@ -94,7 +116,8 @@
         return {
             get: get,
             post: post,
-            put: put
+            put: put,
+            getPaging: getPaging
         }
     }
     angular.module('myApp.services')

@@ -12,7 +12,7 @@
                 <div id="content-top" class="clearfix content-top">
                     <div id="left-area" class="left-area">
                         <ul class="offer">
-                            <li ng-repeat="offer in vm.offers">
+                            <li ng-repeat="offer in vm.offersPaging">
                                 <form><label>Offer</label>
                                     <h2 class="heading title"><a href="#/offers/{{offer.objectId}}">{{offer.title}}</a>
                                     </h2>
@@ -24,6 +24,12 @@
                                 </form>
                             </li>
                         </ul>
+                        <div class='wp-pagenavi'>
+                            <span class="pages">Page {{vm.currentPage}} of {{vm.paginators.length}}</span>
+                            <span class="pages">
+                                    <a ng-repeat="button in vm.paginators" href="#/alloffers/?page={{button}}">{{button}}</a>
+                            </span>
+                        </div>
                     </div>
 
 

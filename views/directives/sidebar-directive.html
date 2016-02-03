@@ -3,7 +3,7 @@
         <div id="recent-posts-4" class="widget widget_recent_entries">
             <h4 class="heading widgettitle">Recent Posts</h4>
             <ul>
-                <li ng-repeat="offer in vm.offers">
+                <li ng-repeat="offer in vm.offers.slice(0,5)">
                     <a href="#/offers/{{offer.objectId}}">{{offer.title}}</a>
                 </li>
             </ul>
@@ -12,7 +12,7 @@
         <div id="recent-comments-3" class="widget widget_recent_comments">
             <h4 class="heading widgettitle">Recent Comments</h4>
             <ul id="recentcomments">
-                <li ng-repeat="comment in vm.comments" class="recentcomments"><span class="comment-author-link">{{comment.user.username}}</span> on <a href="#/offers/{{comment.offerId}}">{{comment.offerTitle}}</a></li>
+                <li ng-repeat="comment in vm.comments.slice(0,5)" class="recentcomments"><span class="comment-author-link">{{comment.user.username}}</span> on <a href="#/offers/{{comment.offerId}}">{{comment.offerTitle}}</a></li>
             </ul>
         </div> <!-- end .widget -->
     </div> <!-- end #sidebar -->

@@ -4,9 +4,14 @@
 (function () {
     'use strict';
 //TODO: Rename To OffersController
-    function AllOffersController(offersService, commentsService) {
+    function AllOffersController($routeParams, offersService, commentsService) {
         var vm = this;
 
+        var queryParams = $routeParams;
+        var displayLimit = 5; // set here number of offers per page
+        var page = +queryParams.page || 1;
+
+        vm.currentPage = page;
 
         offersService.getAllOffers()
             .then(function (allOffers) {
@@ -20,7 +25,39 @@
                     offers.push(allOffers[i].toJSON());
                 }
                 console.log(offers);
-                vm.offers = offers.reverse();
+                vm.offers = offers;
+                } else {
+                    offers = [{
+                        error: "No offers to display!"
+                    }]
+                }
+
+                var totalOffers = offers.length;
+                var paginatorsCount = totalOffers / displayLimit + 1;
+                var paginators = [];
+
+                for (var i = 1; i <= paginatorsCount; i++) {
+                    paginators.push(i);
+                }
+
+                vm.paginators = paginators;
+                console.log(vm.paginators);
+            });
+
+        offersService.getAllOffersForPaging(displayLimit, page - 1)
+            .then(function (allOffers) {
+                console.log('offer controller');
+
+                console.log(allOffers);
+
+                var offers = [];
+                if (allOffers) {
+                    for (var i = 0; i < allOffers.length; i += 1) {
+                        offers.push(allOffers[i].toJSON());
+                    }
+                    console.log(offers);
+                    vm.offersPaging = offers;
+
                 } else {
                     offers = [{
                         error: "No offers to display!"
@@ -42,7 +79,7 @@
                         error: 'No comments to display!'
                     }]
                 }
-            })
+            });
 
         //statistics.getStats()
         //.then(function (stats) {
@@ -64,5 +101,5 @@
 
     }
     angular.module('myApp.controllers')
-        .controller('AllOffersController', ['offersService', 'commentsService', AllOffersController])
+        .controller('AllOffersController', ['$routeParams', 'offersService', 'commentsService', AllOffersController])
 }());

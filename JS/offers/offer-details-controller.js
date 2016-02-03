@@ -57,7 +57,7 @@
                         offers.push(allOffers[i].toJSON());
                     }
                     console.log(offers);
-                    vm.offers = offers.reverse();
+                    vm.offers = offers;
                 } else {
                     offers = [{
                         error: "No offers to display!"

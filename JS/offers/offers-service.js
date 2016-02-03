@@ -56,6 +56,11 @@
             return database.get(object);
         }
 
+        function getAllOffersForPaging (displayLimit,page) {
+            var object = 'Offer';
+            return database.getPaging(object,displayLimit,page);
+        }
+
         function getOfferById(value) {
             var object = 'Offer',
                 params = 'objectId';
@@ -66,7 +71,8 @@
         return {
             addoffer: addoffer,
             getAllOffers: getAllOffers,
-            getOfferById:getOfferById
+            getOfferById: getOfferById,
+            getAllOffersForPaging: getAllOffersForPaging
         }
     }
 
