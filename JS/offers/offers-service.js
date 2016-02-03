@@ -11,7 +11,7 @@
             var deferred = $q.defer();
 
             var object = 'Offer';
-            var user = auth.getUser().toJSON();
+            var user = auth.getUser();
 
             var postUser = {
                 id: user.objectId,
