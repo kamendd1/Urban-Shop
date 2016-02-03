@@ -384,10 +384,10 @@ textarea {
 .project {
     float:left;
     position:relative;
-    margin-right: 2%;
-    margin-left: 2%;
+    margin-right: 4%;
+    margin-left: 4%;
     margin-top: 1.5%;
-    width: 15%;
+    width: 12%;
     height: 66%;
 }
 
@@ -656,11 +656,10 @@ p.description a:hover {
     float: left;
 }
 .top-menu a {
-    font-size:12px;
+    font-size:13px;
     font-weight: 500;
-    color: #292929;
+    color: black;
     text-decoration: none;
-    text-shadow: 1px 1px 0 #ffffff;
 }
 
 .top-menu a:hover {
