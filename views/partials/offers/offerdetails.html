@@ -1,33 +1,36 @@
 <div id="category-name" class="category-name">
     <h1 class="heading category-title">{{vm.offer.title}}</h1>
-<!--
-
     <p class="description">
-        Posted by {{v}}
+        Posted  by: <a href="#" title="Posts by admin" rel="author">{{vm.offer.postedBy.username}}</a> Posted on: <span>{{vm.offer.createdAt}}</span>
     </p>
-</div>
-<div id="main-area" class="main-area">
-    <div id="main-top-shadow" class="main-top-shadow">
-        <div class="container">
-            <div id="content-area" class="content-area">
-                <div id="content-top" class="clearfix content-top">
-                    <div id="left-area" class="left-area">
-                        <ul class="offer">
-                            <li ng-repeat="offer in vm.offers">
-                                <form><label>Offer</label>
-                                    <h2 class="heading title"><a href="#/offers/{{offer.objectId}}">{{offer.title}}</a></h2>
-                                    Posted by: <span>{{offer.postedBy.username}}</span> Posted on: <span>{{offer.createdAt}}</span>
-                                    <div class="row">
-                                        <img src='{{offer.image}}' width="250px" class="col-md-3"/>
-                                        <p class="col-md-7">{{offer.description}}</p>
-                                    </div>
-                                </form>
-                            </li>
-                        </ul>
-                    </div>
-                </div> 	&lt;!&ndash; end #left-area &ndash;&gt;
-            </div> &lt;!&ndash; end #content-top &ndash;&gt;
-        </div> &lt;!&ndash; end #content-area &ndash;&gt;
+    <!--
+
+        <p class="description">
+            Posted by {{v}}
+        </p>
     </div>
--->
+    <div id="main-area" class="main-area">
+        <div id="main-top-shadow" class="main-top-shadow">
+            <div class="container">
+                <div id="content-area" class="content-area">
+                    <div id="content-top" class="clearfix content-top">
+                        <div id="left-area" class="left-area">
+                            <ul class="offer">
+                                <li ng-repeat="offer in vm.offers">
+                                    <form><label>Offer</label>
+                                        <h2 class="heading title"><a href="#/offers/{{offer.objectId}}">{{offer.title}}</a></h2>
+                                        Posted by: <span>{{offer.postedBy.username}}</span> Posted on: <span>{{offer.createdAt}}</span>
+                                        <div class="row">
+                                            <img src='{{offer.image}}' width="250px" class="col-md-3"/>
+                                            <p class="col-md-7">{{offer.description}}</p>
+                                        </div>
+                                    </form>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>  &lt;!&ndash; end #left-area &ndash;&gt;
+                </div> &lt;!&ndash; end #content-top &ndash;&gt;
+            </div> &lt;!&ndash; end #content-area &ndash;&gt;
+        </div>
+    -->
 </div>

@@ -9,7 +9,7 @@
         var offerId = $routeParams.id;
 
 
-        offersService.getAllOffers()
+        offersService.getOfferById(offerId)
             .then(function (allOffers) {
                 console.log('offer controller');
 
@@ -22,6 +22,7 @@
                     }
                     console.log(offers);
                     vm.offers = offers;
+                    vm.offer = offers[0];
                 } else {
                     offers = [{
                         error: "No offers to display!"
