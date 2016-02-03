@@ -40,6 +40,11 @@
                 controller: 'OfferDetailsController',
                 controllerAs: CONTROLLER_VIEW_MODEL
             })
+            .when('/offers/:id/addcomment',{
+                templateUrl: PARTIALS_PREFIX + 'comments/addcomment.html',
+                controller: 'CommentController',
+                controllerAs: CONTROLLER_VIEW_MODEL
+            })
             .otherwise({ redirectTo: '/' });
     }
 

@@ -3,11 +3,6 @@
     <p class="description">
         Posted  by: <a href="#" title="Posts by admin" rel="author">{{vm.offer.postedBy.username}}</a> Posted on: <span>{{vm.offer.createdAt}}</span>
     </p>
-    <!--
-
-        <p class="description">
-            Posted by {{v}}
-        </p>
     </div>
     <div id="main-area" class="main-area">
         <div id="main-top-shadow" class="main-top-shadow">
@@ -15,22 +10,45 @@
                 <div id="content-area" class="content-area">
                     <div id="content-top" class="clearfix content-top">
                         <div id="left-area" class="left-area">
-                            <ul class="offer">
-                                <li ng-repeat="offer in vm.offers">
                                     <form><label>Offer</label>
-                                        <h2 class="heading title"><a href="#/offers/{{offer.objectId}}">{{offer.title}}</a></h2>
-                                        Posted by: <span>{{offer.postedBy.username}}</span> Posted on: <span>{{offer.createdAt}}</span>
                                         <div class="row">
-                                            <img src='{{offer.image}}' width="250px" class="col-md-3"/>
-                                            <p class="col-md-7">{{offer.description}}</p>
+                                            <img src='{{vm.offer.image}}' width="250px" class="col-md-3"/>
+                                            <p class="col-md-7">{{vm.offer.description}}</p>
                                         </div>
                                     </form>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>  &lt;!&ndash; end #left-area &ndash;&gt;
-                </div> &lt;!&ndash; end #content-top &ndash;&gt;
-            </div> &lt;!&ndash; end #content-area &ndash;&gt;
+                            <div id="comment-wrap" class="comment-wraap">
+
+
+                                <h3 id="comments" class="heading comments">9 Comments</h3>
+
+
+                                <ol class="commentlist clearfix">
+                                    <li class="comment even thread-even depth-1" id="li-comment-95">
+                                        <div id="comment-95" class="comment-body clearfix">
+                                            <div class="comment-wrap">
+                                                <div class="comment-meta commentmetadata">
+                                                    <span class="fn"><a href='#' rel='external nofollow' class='url'>Mr WordPress</a></span> | <span class="comment-date">September 4, 2008</span> </div>
+                                                <div class="comment-content">
+                                                    <p>Hi, this is a comment.<br />To delete a comment, just log in and view the post&#039;s comments. There you will have the option to edit or delete them.</p>
+                                                </div> <!-- end comment-content-->
+                                                <div class="reply-container readmore">
+                                                    <a rel='nofollow' class='comment-reply-link' href='#'>Reply</a></div>
+                                            </div> <!-- end comment-wrap-->
+                                            <div class="comment-arrow"></div>
+                                        </div> <!-- end comment-body-->
+                                    </li><!-- #comment-## -->
+
+                                </ol>
+
+
+
+                                <div id="respond" class="respond">
+                                    <h3 id="reply-title" class="heading comment-reply-title reply-title">
+                                        <span><a href="#/offers/{{vm.offer.objectId}}/addcomment">Leave a Reply</a></span>
+                                    </h3>
+                                </div>
+                    </div>  <!-- end #left-area -->
+                </div> <!-- end #content-top -->
+            </div> <!-- end #content-area -->
         </div>
-    -->
 </div>

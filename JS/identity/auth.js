@@ -22,6 +22,7 @@
 
         //get info of the user
         var loggedInUser = localStorage.getItem(userKey);
+        loggedInUser = JSON.parse(loggedInUser);
         console.log(loggedInUser);
 
         function signup(user) {

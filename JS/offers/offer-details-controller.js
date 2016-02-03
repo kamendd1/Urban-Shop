@@ -4,10 +4,10 @@
 (function () {
     'use strict';
 //TODO: Rename To OffersController
-    function OfferDetailsController($routeParams, offersService) {
+    function OfferDetailsController($routeParams, $scope, offersService) {
         var vm = this;
         var offerId = $routeParams.id;
-
+        $scope.offerId = offerId;
 
         offersService.getOfferById(offerId)
             .then(function (allOffers) {
@@ -50,5 +50,5 @@
 
     }
     angular.module('myApp.controllers')
-        .controller('OfferDetailsController', ['$routeParams', 'offersService', OfferDetailsController])
+        .controller('OfferDetailsController', ['$routeParams', '$scope', 'offersService', OfferDetailsController])
 }());

@@ -1,0 +1,24 @@
+<div class="container">
+    <div class="well" ng-show="auth.isAuthenticated()">
+        <form name="addCommentForm" class="form-horizontal">
+            <fieldset>
+                <legend>Add New Comment</legend>
+
+                <div class="form-group">
+                    <label for="text" class="col-md-2 control-label">Text</label>
+                    <div class="col-md-10">
+                        <textarea id="text" name="Text" type="text" placeholder="Comment Text" ng-model="comment.text" required="required" class="form-control"></textarea>
+                    </div>
+                </div>
+
+                <div class="pull-right">
+                    <button ng-click="addcomment(comment)" ng-disabled="addCommentForm.$invalid" class="btn btn-primary">
+                        Post
+                    </button>
+                    <a href="#/" class="btn btn-primary">Cancel</a>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+    <div class="well" ng-hide="auth.isAuthenticated()"><h2 class="heading title">You Must be Logged In to Add Comment!</h2></div>
+</div>
