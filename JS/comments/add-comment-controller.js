@@ -4,14 +4,31 @@
 (function () {
     'use strict';
 
-    function CommentController($scope, $location,$routeParams, commentsService, notifier, auth) {
+    function CommentController($scope, $location,$routeParams, commentsService, offersService, notifier, auth) {
         $scope.auth = auth;
         var offerId = $routeParams.id;
+        var offer;
 
         $scope.addcomment = function (comment) {
             console.log('reg cont - sign up');
 
-            commentsService.addComment(comment,offerId).then(function () {
+            offersService.getOfferById(offerId)
+                .then(function (allOffers) {
+
+                    var offers = [];
+                    if(allOffers){
+                        for (var i = 0; i < allOffers.length; i += 1) {
+                            offers.push(allOffers[i].toJSON());
+                        }
+                        offer = offers[0];
+                    } else {
+                        offers = [{
+                            error: "No offers to display!"
+                        }]
+                    }
+                });
+
+            commentsService.addComment(comment,offer).then(function () {
                 notifier.success('Comment added successfully!');
                 $location.path('/offers/'+offerId);
             }, function (error) {
@@ -20,5 +37,5 @@
         }
     }
 
-    angular.module('myApp.controllers').controller('CommentController', ['$scope', '$location','$routeParams', 'commentsService', 'notifier', 'auth', CommentController]);
+    angular.module('myApp.controllers').controller('CommentController', ['$scope', '$location','$routeParams', 'commentsService', 'offersService', 'notifier', 'auth', CommentController]);
 }());

@@ -4,7 +4,7 @@
 (function () {
     'use strict';
 //TODO: Rename To OffersController
-    function AllOffersController(offersService) {
+    function AllOffersController(offersService, commentsService) {
         var vm = this;
 
 
@@ -28,6 +28,22 @@
                 }
             });
 
+        commentsService.getAll()
+            .then(function(allComments){
+                var comments = [];
+
+                if(allComments){
+                    for(var i = 0; i < allComments.length; i+=1){
+                        comments.push(allComments[i].toJSON());
+                    }
+                    vm.comments = comments.reverse();
+                } else {
+                    comments = [{
+                        error: 'No comments to display!'
+                    }]
+                }
+            })
+
         //statistics.getStats()
         //.then(function (stats) {
         //    vm.stats = stats;
@@ -48,5 +64,5 @@
 
     }
     angular.module('myApp.controllers')
-        .controller('AllOffersController', ['offersService', AllOffersController])
+        .controller('AllOffersController', ['offersService', 'commentsService', AllOffersController])
 }());

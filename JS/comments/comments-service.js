@@ -5,7 +5,7 @@
     'use strict';
     function commentsService($http, $q, $routeParams, identity, authorization, baseServiceUrl, database, auth) {
 
-        function addComment(comment,offerId) {
+        function addComment(comment,offer) {
             console.log('comment - add');
 
 
@@ -24,7 +24,8 @@
             };
 
             var postData = {
-                offerId:offerId,
+                offerId:offer.objectId,
+                offerTitle: offer.title,
                 user: postUser,
                 content: comment.content
             };
@@ -59,6 +60,12 @@
             return database.get(object, params, offerId)
         }
 
+        function getAllComments(){
+            var object = 'Comment';
+
+            return database.get(object);
+        }
+
         /*  function getAllOffers() {
          var object = 'Offer';
 
@@ -74,7 +81,8 @@
 
         return {
             addComment: addComment,
-            getCommentsByOfferId: getCommentsByOfferId
+            getCommentsByOfferId: getCommentsByOfferId,
+            getAll: getAllComments
             /*getAllOffers: getAllOffers,
              getOfferById:getOfferById*/
         }
