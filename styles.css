@@ -52,7 +52,7 @@ body {
     font-family: 'Droid Sans', Arial, sans-serif;
     font-size: 12px; color: #8c8b8b;
     text-shadow: 1px 1px 1px #ffffff;
-    background: #131a26 repeat-x;
+    background: url('images/oblacheta-2.png'), repeat-x, repeat-y;
 }
 
 a {
@@ -204,7 +204,7 @@ textarea {
 }
 
 .header {
-    background: url(images/top-center-bg.jpg) center;
+    background: transparent;
 }
 
 .headeer{
@@ -448,6 +448,7 @@ span.zoom-icon {
 .breadcrumbs {
     font-size:12px;
     padding-top:27px;
+    margin-left:10%;
     color:#758b8d;
     margin-bottom: 30px;
     text-shadow: 1px 1px 1px #ffffff;
@@ -481,7 +482,7 @@ span.zoom-icon {
     padding-bottom: 30px;
     padding-top: 60px;
     padding-left: 13%;
-    background: url(images/top-center-bg.jpg) center;
+    background:transparent;
 }
 
 .category-title {
@@ -512,6 +513,7 @@ p.description a:hover {
 .content-area {
     background:url(images/content-area.png) repeat-y 70% 0;
     padding: 0 0 40px 0;
+    margin-top: 5%;
 }
 
 .left-area {
@@ -519,9 +521,18 @@ p.description a:hover {
     float:left;
 }
 
+.offer-wrap{
+    margin-left: 8%;
+}
+
+.offertext{
+    padding-bottom: 5%;
+}
+
 .sidebar {
     width: 29%;
     float:left;
+    margin-top: 3%;
 }
 .post {
     padding:0 40px 50px 0;

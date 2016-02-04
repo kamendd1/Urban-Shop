@@ -1,58 +1,63 @@
 <div id="category-name" class="category-name">
     <h1 class="heading category-title">{{vm.offer.title}}</h1>
     <p class="description">
-        Posted  by: <a href="#" title="Posts by admin" rel="author">{{vm.offer.postedBy.username}}</a> Posted on: <span>{{vm.offer.createdAt}}</span>
+        Posted by: <a href="#" title="Posts by admin" rel="author">{{vm.offer.postedBy.username}}</a> Posted on: <span>{{vm.offer.createdAt}}</span>
     </p>
-    </div>
-    <div id="main-area" class="main-area">
-        <div id="main-top-shadow" class="main-top-shadow">
-            <div class="container">
-                <div id="content-area" class="content-area">
-                    <div id="content-top" class="clearfix content-top">
-                        <div id="left-area" class="left-area">
-                            <div id="breadcrumbs" class="breadcrumbs">
-                                <a href="#/">Home</a>
-                                <span class="raquo">&raquo;</span>
-                                <a href="#/offers/{{vm.offer.objectId}}">Offer</a>
+</div>
+<div id="main-area" class="main-area">
+    <div id="main-top-shadow" class="main-top-shadow">
+        <div class="container">
+            <div id="content-area" class="content-area">
+                <div id="content-top" class="clearfix content-top">
+                    <div id="left-area" class="left-area">
+                        <div id="breadcrumbs" class="breadcrumbs">
+                            <a href="#/">Home</a>
+                            <span class="raquo">&raquo;</span>
+                            <a href="#/offers/{{vm.offer.objectId}}">Offer</a>
+                        </div>
+                        <div class="offer-wrap">
+                        <form>
+                            <div class="row">
+                                <img src='{{vm.offer.image}}' width="250px" class="col-md-3"/>
+                                <p class="col-md-7 offertext">{{vm.offer.description}}</p>
                             </div>
-                                    <form>
-                                        <div class="row">
-                                            <img src='{{vm.offer.image}}' width="250px" class="col-md-3"/>
-                                            <p class="col-md-7">{{vm.offer.description}}</p>
-                                        </div>
-                                    </form>
-                            <div id="comment-wrap" class="comment-wraap">
+                        </form>
+                        <div id="comment-wrap" class="comment-wraap">
 
 
-                                <h3 id="comments" class="heading comments">{{vm.offerComments.length}} Comments</h3>
+                            <h3 id="comments" class="heading comments">{{vm.offerComments.length}} Comments</h3>
 
 
-                                <ol class="commentlist clearfix">
-                                    <li ng-repeat="comment in vm.offerComments" class="comment even thread-even depth-1" id="li-comment-95">
-                                        <div id="comment-95" class="comment-body clearfix">
-                                            <div class="comment-wrap">
-                                                <div class="comment-meta commentmetadata">
-                                                    <span class="fn">{{comment.user.username}}</span> | <span class="comment-date">{{comment.createdAt | beautifulDate}}</span> </div>
-                                                <div class="comment-content">
-                                                    <p>{{comment.content}}</p>
-                                                </div> <!-- end comment-content-->
-                                            </div> <!-- end comment-wrap-->
-                                            <div class="comment-arrow"></div>
-                                        </div> <!-- end comment-body-->
-                                    </li><!-- #comment-## -->
+                            <ol class="commentlist clearfix">
+                                <li ng-repeat="comment in vm.offerComments" class="comment even thread-even depth-1"
+                                    id="li-comment-95">
+                                    <div id="comment-95" class="comment-body clearfix">
+                                        <div class="comment-wrap">
+                                            <div class="comment-meta commentmetadata">
+                                                <span class="fn">{{comment.user.username}}</span> | <span
+                                                    class="comment-date">{{comment.createdAt | beautifulDate}}</span>
+                                            </div>
+                                            <div class="comment-content">
+                                                <p>{{comment.content}}</p>
+                                            </div> <!-- end comment-content-->
+                                        </div> <!-- end comment-wrap-->
+                                        <div class="comment-arrow"></div>
+                                    </div> <!-- end comment-body-->
+                                </li><!-- #comment-## -->
 
-                                </ol>
+                            </ol>
 
 
-
-                                <div id="respond" class="respond">
-                                    <h3 id="reply-title" class="heading comment-reply-title reply-title">
-                                        <span><a href="#/offers/{{vm.offer.objectId}}/addcomment">Leave a Reply</a></span>
-                                    </h3>
-                                </div>
-                    </div>  <!-- end #left-area -->
-                </div> <!-- end #content-top -->
-                        <div sidebar />
-            </div> <!-- end #content-area -->
+                            <div id="respond" class="respond">
+                                <h3 id="reply-title" class="heading comment-reply-title reply-title">
+                                    <span><a href="#/offers/{{vm.offer.objectId}}/addcomment">Leave a Reply</a></span>
+                                </h3>
+                            </div>
+                            </div>
+                        </div>  <!-- end #left-area -->
+                    </div> <!-- end #content-top -->
+                    <div sidebar/>
+                </div> <!-- end #content-area -->
+            </div>
         </div>
 </div>
