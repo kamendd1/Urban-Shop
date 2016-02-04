@@ -215,6 +215,11 @@ textarea {
 
 .offer{
     padding-left: 10%;
+    padding-bottom: 2%;
+}
+
+.offer li{
+    padding-bottom: 5%;
 }
 
 .logo {
