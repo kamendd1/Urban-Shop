@@ -11,9 +11,14 @@
             <div id="content-area" class="content-area">
                 <div id="content-top" class="clearfix content-top">
                     <div id="left-area" class="left-area">
+                        <div id="breadcrumbs" class="breadcrumbs">
+                            <a href="#/">Home</a>
+                            <span class="raquo">&raquo;</span>
+                            <a href="#/alloffers">Browse Offers</a>
+                        </div>
                         <ul class="offer">
                             <li ng-repeat="offer in vm.offersPaging">
-                                <form><label>Offer</label>
+                                <form>
                                     <h2 class="heading title"><a href="#/offers/{{offer.objectId}}">{{offer.title}}</a>
                                     </h2>
                                     Posted by: <span>{{offer.postedBy.username}}</span> Posted on: <span>{{offer.createdAt | beautifulDate}}</span>

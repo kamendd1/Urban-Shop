@@ -10,7 +10,12 @@
                 <div id="content-area" class="content-area">
                     <div id="content-top" class="clearfix content-top">
                         <div id="left-area" class="left-area">
-                                    <form><label>Offer</label>
+                            <div id="breadcrumbs" class="breadcrumbs">
+                                <a href="#/">Home</a>
+                                <span class="raquo">&raquo;</span>
+                                <a href="#/offers/{{vm.offer.objectId}}">Offer</a>
+                            </div>
+                                    <form>
                                         <div class="row">
                                             <img src='{{vm.offer.image}}' width="250px" class="col-md-3"/>
                                             <p class="col-md-7">{{vm.offer.description}}</p>
