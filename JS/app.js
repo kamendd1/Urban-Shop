@@ -45,6 +45,16 @@
                 controller: 'CommentController',
                 controllerAs: CONTROLLER_VIEW_MODEL
             })
+            .when('/about',{
+                templateUrl: PARTIALS_PREFIX + 'static/about.html',
+                controller: 'OfferDetailsController',
+                controllerAs: CONTROLLER_VIEW_MODEL
+            })
+            .when('/contact',{
+                templateUrl: PARTIALS_PREFIX + 'static/contact.html',
+                controller: 'OfferDetailsController',
+                controllerAs: CONTROLLER_VIEW_MODEL
+            })
             .otherwise({ redirectTo: '/' });
     }
 
