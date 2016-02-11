@@ -52,7 +52,7 @@
                                             <li id="menu-item-603"><a href="#/addoffer">Add Offers</a></li>
                                             <li id="menu-item-590"><a href="#/alloffers">Browse Offers</a></li>
                                             <li id="menu-item-586"><a href="#/about">About</a></li>
-                                            <li id="menu-item-587"><a href="#">Blog</a></li>
+                                            <li id="menu-item-587"><a href="#/blog">Blog</a></li>
                                             <li id="menu-item-594"><a href="#/contact">Support</a></li>
                                             <div ng-include="'views/partials/identity/loginbtn.html'"></div>
                                             <li id="menu-item-639"><a href="#">FAQ</a></li>
@@ -80,11 +80,11 @@
             <div class="container clearfix row">
                 <ul id="menu-pages" class="bottom-nav col-md-7 col-xs-6">
                     <li><a href="#/">Home</a></li>
-                    <li><a href="#/">About Us</a></li>
-                    <li><a href="#/">Portfolio</a></li>
-                    <li><a href="#/">Blog</a></li>
-                    <li><a href="#/">Contact</a></li>
-                    <li><a href="#/">Testimonials</a></li>
+                    <li><a href="#/about">About Us</a></li>
+                    <li><a href="#/alloffers">Portfolio</a></li>
+                    <li><a href="#/blog">Blog</a></li>
+                    <li><a href="#/contact">Contact</a></li>
+                    <li><a href="#/alloffers">Testimonials</a></li>
                 </ul>
                 <p id="copyright" class="col-md-5 col-xs-6 copyright">Designed by <a href="#/">Kamen Damyanov
                     (Kamendd1)</a> | Powered by <a href="https://www.wordpress.com">WordPress</a></p>
@@ -115,6 +115,7 @@
 
         <!--HOME-->
         <script src="./js/home/home-controller.js"></script>
+
         <!--IDENTITY-->
         <script src="./js/identity/authorization.js"></script>
         <script src="./js/identity/identity.js"></script>
@@ -125,9 +126,6 @@
         <!--SERVICES-->
         <script src="./js/offers/offers-service.js"></script>
         <script src="./js/comments/comments-service.js"></script>
-
-        <!--<script src="js/services.js"></script>-->
-
 
         <!--CONTROLLERS-->
         <script src="js/offers/add-offers-controller.js"></script>

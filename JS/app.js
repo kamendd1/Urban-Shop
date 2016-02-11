@@ -55,6 +55,11 @@
                 controller: 'OfferDetailsController',
                 controllerAs: CONTROLLER_VIEW_MODEL
             })
+            .when('/blog',{
+                templateUrl: PARTIALS_PREFIX + 'static/blog.html',
+                controller: 'OfferDetailsController',
+                controllerAs: CONTROLLER_VIEW_MODEL
+            })
             .otherwise({ redirectTo: '/' });
     }
 
