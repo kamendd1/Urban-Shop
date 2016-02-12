@@ -60,6 +60,11 @@
                 controller: 'OfferDetailsController',
                 controllerAs: CONTROLLER_VIEW_MODEL
             })
+            .when('/faq',{
+                templateUrl: PARTIALS_PREFIX + 'static/faq.html',
+                controller: 'OfferDetailsController',
+                controllerAs: CONTROLLER_VIEW_MODEL
+            })
             .otherwise({ redirectTo: '/' });
     }
 
