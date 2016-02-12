@@ -4,7 +4,7 @@
 (function () {
     'use strict';
 
-    function CommentController($scope, $location,$routeParams, commentsService, offersService, notifier, auth) {
+    function CommentController($scope, $location, $routeParams, commentsService, offersService, notifier, auth) {
         $scope.auth = auth;
         var offerId = $routeParams.id;
         var offer;

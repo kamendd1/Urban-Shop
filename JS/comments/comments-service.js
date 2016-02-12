@@ -3,9 +3,9 @@
  */
 (function () {
     'use strict';
-    function commentsService($http, $q, $routeParams, identity, authorization, baseServiceUrl, database, auth) {
+    function commentsService($q, database, auth) {
 
-        function addComment(comment,offer) {
+        function addComment(comment, offer) {
 
             var deferred = $q.defer();
             var object = 'Comment';
@@ -61,5 +61,5 @@
     }
 
     angular.module('myApp.services')
-        .factory('commentsService', ['$http', '$q', '$routeParams', 'identity', 'authorization', 'baseServiceUrl', 'database', 'auth', commentsService]);
+        .factory('commentsService', ['$q', 'database', 'auth', commentsService]);
 }());

@@ -4,7 +4,7 @@
     Parse.initialize("FX5qfbCqpaQfSQUUYruolH7YmoN1WwmZSyPZGrcQ", "mln7VPvMITZqcdhY3cpInNPfwLQJFifttmXtttil");
 
 //TODO: refactor
-    function auth($http, $q, identity, authorization, baseServiceUrl, database) {
+    function auth($q) {
 
         var userKey;
         // get all keys of the local storage
@@ -95,5 +95,5 @@
     }
 
     angular.module('myApp.services')
-        .factory('auth', ['$http', '$q', 'identity', 'authorization', 'baseServiceUrl', 'database', auth]);
+        .factory('auth', ['$q', auth]);
 }());
