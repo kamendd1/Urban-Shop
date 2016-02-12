@@ -1,7 +1,7 @@
 (function () {
     'use strict';
 
-    function HomeController(offersService,commentsService) {
+    function HomeController(offersService, commentsService) {
         var vm = this;
 
         offersService.getAllOffers()

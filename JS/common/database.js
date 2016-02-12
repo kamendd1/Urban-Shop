@@ -4,7 +4,7 @@
     Parse.initialize("FX5qfbCqpaQfSQUUYruolH7YmoN1WwmZSyPZGrcQ", "mln7VPvMITZqcdhY3cpInNPfwLQJFifttmXtttil");
 */
 
-    function data($http, $q,notifier, baseServiceUrl,authorization) {
+    function data($q, notifier, authorization) {
 
         function getPaging (object, displayLimit,page) {
             var deferred = $q.defer();
@@ -98,5 +98,5 @@
         }
     }
     angular.module('myApp.services')
-        .factory('database', ['$http', '$q','notifier', 'baseServiceUrl','authorization', data])
+        .factory('database', ['$q','notifier', 'authorization', data])
 }());

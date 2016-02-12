@@ -3,7 +3,7 @@
  */
 (function () {
     'use strict';
-    function offersService($http, $q, $routeParams, identity, authorization, baseServiceUrl, database, auth) {
+    function offersService($q, database, auth) {
 
         function addoffer(offer) {
             var deferred = $q.defer();
@@ -69,5 +69,5 @@
     }
 
     angular.module('myApp.services')
-        .factory('offersService', ['$http', '$q', '$routeParams', 'identity', 'authorization', 'baseServiceUrl', 'database', 'auth', offersService]);
+        .factory('offersService', ['$q', 'database', 'auth', offersService]);
 }());
