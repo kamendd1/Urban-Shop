@@ -12,7 +12,6 @@
                     for (var i = 0; i < allOffers.length; i += 1) {
                         offers.push(allOffers[i].toJSON());
                     }
-                    console.log(offers);
                     vm.offers = offers;
                 } else {
                     offers = [{

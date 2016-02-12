@@ -9,25 +9,19 @@
         var userKey;
         // get all keys of the local storage
         var keys = Object.keys(localStorage);
-        console.log(keys);
 
         //find the key with the user
         for(var i = 0; i<keys.length; i++){
-            console.log(keys[i]);
             if(keys[i].toString().endsWith('User')){
                 userKey = keys[i];
             }
         }
-        console.log(userKey);
 
         //get info of the user
         var loggedInUser = localStorage.getItem(userKey);
         loggedInUser = JSON.parse(loggedInUser);
-        console.log(loggedInUser);
 
         function signup(user) {
-
-            console.log('auth - sign up');
 
             var deferred = $q.defer();
             var parseUser = new Parse.User();
@@ -41,7 +35,6 @@
                     success: function(user) {
                         // Hooray! Let them use the app now.
                         loggedInUser = user;
-                        console.log(loggedInUser);
                         deferred.resolve();
                     },
                     error: function (user, error) {

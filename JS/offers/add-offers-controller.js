@@ -8,7 +8,6 @@
 
         $scope.auth = auth;
         $scope.addoffer = function (offer) {
-            console.log('reg cont - sign up');
 
             offersService.addoffer(offer).then(function () {
                 notifier.success('Offer added successfully!');
@@ -19,7 +18,6 @@
         };
 
         var vm = this;
-        console.log('tuk sam');
         offersService.getAllOffers()
             .then(function (allOffers) {
 
@@ -28,7 +26,6 @@
                     for (var i = 0; i < allOffers.length; i += 1) {
                         offers.push(allOffers[i].toJSON());
                     }
-                    console.log(offers);
                     vm.offers = offers;
                 } else {
                     offers = [{

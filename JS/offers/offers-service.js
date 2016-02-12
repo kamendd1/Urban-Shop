@@ -6,10 +6,7 @@
     function offersService($http, $q, $routeParams, identity, authorization, baseServiceUrl, database, auth) {
 
         function addoffer(offer) {
-            console.log('auth - sign up');
-            console.log(offer);
             var deferred = $q.defer();
-
             var object = 'Offer';
             var user = auth.getUser();
 
@@ -27,14 +24,9 @@
 
             };
 
-            console.log(postData);
 
             database.post(object, postData).then(function () {
-                console.log('reg');
-
                 deferred.resolve();
-                console.log('reg');
-
             }, function (response) {
                 var error = response.data.modelState;
                 if (error && error[Object.keys(error)[0]][0]) {

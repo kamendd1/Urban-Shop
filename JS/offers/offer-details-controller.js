@@ -11,16 +11,12 @@
 
         offersService.getOfferById(offerId)
             .then(function (allOffers) {
-                console.log('offer controller');
-
-                console.log(allOffers);
 
                 var offers = [];
                 if(allOffers){
                     for (var i = 0; i < allOffers.length; i += 1) {
                         offers.push(allOffers[i].toJSON());
                     }
-                    console.log(offers);
                     vm.offer = offers[0];
                 } else {
                     offers = [{
@@ -47,16 +43,12 @@
 
         offersService.getAllOffers()
             .then(function (allOffers) {
-                console.log('offer controller');
-
-                console.log(allOffers);
 
                 var offers = [];
                 if(allOffers){
                     for (var i = 0; i < allOffers.length; i += 1) {
                         offers.push(allOffers[i].toJSON());
                     }
-                    console.log(offers);
                     vm.offers = offers;
                 } else {
                     offers = [{
