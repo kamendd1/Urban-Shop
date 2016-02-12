@@ -10,7 +10,6 @@
         $scope.auth = auth;
 
         $scope.login = function (user) {
-            console.log('reg cont - log in');
 
             auth.login(user).then(function () {
                 notifier.success('Logged in successfully!');

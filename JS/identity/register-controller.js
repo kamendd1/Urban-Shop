@@ -3,7 +3,6 @@
 
     function RegisterController($scope, $location, auth, notifier) {
         $scope.signup = function (user) {
-            console.log('reg cont - sign up');
 
             auth.signup(user).then(function () {
                 notifier.success('Registration successful!');
