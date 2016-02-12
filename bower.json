@@ -17,5 +17,14 @@
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {
+    "angular": "~1.4.9",
+    "angular-cookies": "~1.4.9",
+    "angular-route": "~1.4.9",
+    "bootstrap": "~3.3.5",
+    "cryptojslib": "~3.1.2",
+    "parse": "~1.6.14",
+    "toastr": "~2.1.2"
+  }
 }
