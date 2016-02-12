@@ -207,6 +207,10 @@ textarea {
     background: transparent;
 }
 
+.row{
+    margin:0!important;
+}
+
 .headeer{
     margin-top: 35px;
     padding-left: 13%;
